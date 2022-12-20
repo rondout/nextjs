@@ -1,0 +1,16 @@
+<svg width="120" height="120" viewBox="0 0 120 120" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="30" y="77" width="42" height="60" rx="4" transform="rotate(-90 30 77)" fill="white"/>
+<rect x="30.5" y="76.5" width="41" height="59" rx="3.5" transform="rotate(-90 30.5 76.5)" stroke="#1A272E" stroke-opacity="0.8"/>
+<rect x="34" y="73" width="34" height="52" rx="3" transform="rotate(-90 34 73)" fill="#5CB2FF"/>
+<path d="M40 64L50 53L56.3441 60.9268L69.6774 46L80 60.9268" stroke="white" stroke-width="4"/>
+<rect x="55" y="77" width="11" height="5" fill="#5CB2FF"/>
+<rect x="37" y="81" width="46" height="4" rx="2" fill="white"/>
+<rect x="37.5" y="81.5" width="45" height="3" rx="1.5" stroke="#1A272E" stroke-opacity="0.8"/>
+<rect x="68" y="48" width="25" height="40" rx="3" fill="white"/>
+<rect x="68.5" y="48.5" width="24" height="39" rx="2.5" stroke="#1A272E" stroke-opacity="0.8"/>
+<rect x="75.9141" y="83.3516" width="7.4386" height="2.78947" rx="1.39474" fill="white"/>
+<rect x="76.4141" y="83.8516" width="6.4386" height="1.78947" rx="0.894737" stroke="#1A272E" stroke-opacity="0.8"/>
+<rect x="71" y="52" width="19" height="30" rx="1" fill="#5CB2FF"/>
+<rect x="73.5" y="56" width="6" height="6" rx="1" fill="white"/>
+<rect x="81.5" y="56" width="6" height="6" rx="1" fill="white"/>
+</svg>
