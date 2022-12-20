@@ -18,7 +18,7 @@ pnpm create next-app
 
 ## 开发
 
-Next 框架的页面开发语法是 React，关于 React 有关用法这里不在赘述。
+Next 框架的页面开发语法是React，关于 React 有关用法这里不在赘述。
 
 ### 页面路由
 
