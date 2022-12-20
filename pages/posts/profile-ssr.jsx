@@ -3,13 +3,17 @@ import Layout from "../../components/layout";
 import Link from "next/link";
 
 export async function getServerSideProps() {
-  const userInfo = await fetch("http://localhost:3002/api/username", {
-    method: "get",
-  });
+  // const userInfo = await fetch("http://localhost:3002/api/username", {
+  //   method: "get",
+  // });
 
   return {
     props: {
-      userInfo: await userInfo.json(),
+      userInfo: {
+        firstName: "Joey",
+        lastName: "Tribiani",
+        desc: "Joey Tribiani from Server Express App",
+      },
     },
   };
 }

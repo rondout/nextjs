@@ -3,16 +3,20 @@ import Layout from "../../components/layout";
 import Link from "next/link";
 
 export async function getStaticProps() {
-  const userInfo = await fetch("http://localhost:3002/api/username", {
-    method: "get",
-  });
+  // const userInfo = await fetch("http://localhost:3002/api/username", {
+  //   method: "get",
+  // });
 
   // const iconContent = await fetch("http://localhost:3000/tree.svg");
 
   return {
     props: {
       iconContent: "await iconContent.text()",
-      userInfo: await userInfo.json(),
+      userInfo: {
+        firstName: "Joey",
+        lastName: "Tribiani",
+        desc: "Joey Tribiani from Server Express App",
+      },
     },
   };
 }

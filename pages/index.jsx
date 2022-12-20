@@ -10,15 +10,19 @@ import { useTranslation } from "next-i18next";
 
 export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
-  const userInfo = await fetch("http://localhost:3000/api/username", {
-    method: "get",
-  });
+  // const userInfo = await fetch("http://localhost:3000/api/username", {
+  //   method: "get",
+  // });
   return {
     props: {
       ...(await serverSideTranslations(locale, ["poems", "common"])),
       locale,
       allPostsData,
-      userInfo: await userInfo.json(),
+      userInfo: {
+        firstName: "Joey",
+        lastName: "Tribiani",
+        desc: "Joey Tribiani from Server Express App",
+      },
     },
   };
 }
@@ -45,9 +49,9 @@ export default function Home(props) {
         <Link href="/blogs">
           <h4>{t("blogs")}</h4>
         </Link>
-        <Link href="/poems">
+        {/* <Link href="/poems">
           <h4>{t("poems")}</h4>
-        </Link>
+        </Link> */}
         <Link href="/solar">
           <h4>{t("solarSystem")}</h4>
         </Link>
