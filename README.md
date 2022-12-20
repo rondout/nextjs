@@ -14,11 +14,11 @@ yarn create next-app
 pnpm create next-app
 ```
 
-如果想用 typescript 开发则可以在上面的命令后面加上`--typescript`选项。
+如果想用 typescript 开发则可以在上面的命令后面加上`--typescript`选项。 
 
 ## 开发
 
-Next 框架的页面开发语法是React，关于 React 有关用法这里不在赘述。
+Next框架的页面开发语法是React，关于 React 有关用法这里不在赘述。
 
 ### 页面路由
 
