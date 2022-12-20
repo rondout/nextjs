@@ -3,11 +3,17 @@ import Layout from "../../components/layout";
 import styles from "./poemDetail.module.css";
 
 export async function getStaticProps() {
-  const poemList = await fetch("http://localhost:3002/api/poem-list");
+  // const poemList = await fetch("http://localhost:3002/api/poem-list");
 
   return {
     props: {
-      poemList: await poemList.json(),
+      poemList: [
+        "chushibiao",
+        "longzhongdui",
+        "niannujiao",
+        "qinyuanchunxue",
+        "tengwanggexu",
+      ],
     },
     // 增量更新间隔
     // revalidate: 30,

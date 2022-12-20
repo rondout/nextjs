@@ -10,7 +10,7 @@ import { useTranslation } from "next-i18next";
 
 export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
-  const userInfo = await fetch("http://localhost:3002/api/username", {
+  const userInfo = await fetch("http://localhost:3000/api/username", {
     method: "get",
   });
   return {

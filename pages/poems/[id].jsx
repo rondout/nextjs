@@ -4,9 +4,16 @@ import Layout from "../../components/layout";
 import styles from "./poemDetail.module.css";
 
 export async function getStaticPaths() {
-  const poemList = await (
-    await fetch("http://localhost:3002/api/poem-list")
-  ).json();
+  // const poemList = await (
+  //   await fetch("http://localhost:3002/api/poem-list")
+  // ).json();
+  const poemList = [
+    "chushibiao",
+    "longzhongdui",
+    "niannujiao",
+    "qinyuanchunxue",
+    "tengwanggexu",
+  ];
 
   return {
     paths: poemList.map((item) => ({ params: { id: item } })),
@@ -18,18 +25,17 @@ export async function getStaticPaths() {
 }
 
 export async function getStaticProps(args) {
-  const data = await fetch(
-    "http://localhost:3002/api/" + args.params.id + "?lang=" + args.locale,
-    {
-      params: { locale: args.locale },
-    }
-  );
-  const bufferResponse = await data.arrayBuffer();
+  const data = await (
+    await fetch("http://localhost:3000/api/poems?id=" + args.params.id)
+  ).text();
+  console.log(args.params.id, { data });
+  // const bufferResponse = await data.arrayBuffer();
   return {
     props: {
       ...args,
       id: args.params.id,
-      content: Buffer.from(bufferResponse).toString(),
+      // content: Buffer.from(bufferResponse).toString(),
+      content: data,
     },
     // 增量更新间隔
     // revalidate: 30,
