@@ -7,6 +7,7 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 
 import { getSortedPostsData } from "../lib/posts";
 import { useTranslation } from "next-i18next";
+import { Button, Typography } from "@mui/material";
 
 export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
@@ -36,10 +37,13 @@ export default function Home(props) {
 
       {/* Add this <section> tag below the existing <section> tag */}
       <section className={`${utilStyles.headingMd} ${utilStyles.padding1px}`}>
-        <h2 className={utilStyles.headingLg}>{t("blogs")}</h2>
+        <Typography variant="h2" className={utilStyles.headingLg}>
+          {t("blogs")}
+        </Typography>
         <Link href="/posts/profile">
           <h4>{`${props.userInfo.firstName} ${props.userInfo.lastName}`}</h4>
         </Link>
+        <Button variant="contained">111</Button>
         <Link href="/posts/profile-ssr">
           <h4>
             {t("SSR")}:

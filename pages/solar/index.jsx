@@ -1,10 +1,15 @@
+import { Box, Button } from "@mui/material";
 import Layout from "../../components/layout";
 import styles from "./solar.module.css";
 
 export default function SolarSystem() {
   return (
     <Layout>
-      <h2 style={{ textAlign: "center" }}>This is solar system</h2>
+      <Box sx={{ display: "flex", justifyContent: "center", p: 2 }}>
+        <Button variant="outlined" sx={{ margin: "auto" }}>
+          This is solar system
+        </Button>
+      </Box>
       <div className={styles.container}>
         {/* 太阳 */}
         <div className={styles.sun}>Sun</div>

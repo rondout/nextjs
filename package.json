@@ -7,6 +7,9 @@
     "test": "next build && yarn start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/material": "^5.11.1",
     "gray-matter": "^4.0.3",
     "i18next": "^22.4.6",
     "moment": "^2.29.4",
