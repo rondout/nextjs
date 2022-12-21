@@ -1,13 +1,35 @@
 import { Box, Button } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
 import Layout from "../../components/layout";
+import { decrement, increment } from "../../store/reducers/counter";
 import styles from "./solar.module.css";
 
 export default function SolarSystem() {
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  const handleAddCount = () => {
+    console.log("ADD");
+    dispatch(increment());
+  };
+
+  const handleMinusCount = () => {
+    dispatch(decrement());
+  };
+
   return (
     <Layout>
       <Box sx={{ display: "flex", justifyContent: "center", p: 2 }}>
         <Button variant="outlined" sx={{ margin: "auto" }}>
-          This is solar system
+          This is solar system {count}
+        </Button>
+      </Box>
+      <Box>
+        <Button variant="contained" onClick={handleAddCount}>
+          add
+        </Button>
+        <Button variant="contained" onClick={handleMinusCount}>
+          minus
         </Button>
       </Box>
       <div className={styles.container}>

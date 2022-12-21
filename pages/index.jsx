@@ -8,6 +8,8 @@ import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { getSortedPostsData } from "../lib/posts";
 import { useTranslation } from "next-i18next";
 import { Button, Typography } from "@mui/material";
+import { useDispatch, useSelector } from "react-redux";
+import { decrement, increment } from "../store/reducers/counter";
 
 export async function getStaticProps({ locale }) {
   const allPostsData = getSortedPostsData();
@@ -31,6 +33,18 @@ export async function getStaticProps({ locale }) {
 export default function Home(props) {
   const poemT = useTranslation("poems").t;
   const t = useTranslation("common").t;
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
+  const handleAddCount = () => {
+    console.log("ADD");
+    dispatch(increment());
+  };
+
+  const handleMinusCount = () => {
+    dispatch(decrement());
+  };
+
   return (
     <Layout home>
       {/* Keep the existing code here */}
@@ -43,7 +57,13 @@ export default function Home(props) {
         <Link href="/posts/profile">
           <h4>{`${props.userInfo.firstName} ${props.userInfo.lastName}`}</h4>
         </Link>
-        <Button variant="contained">111</Button>
+        <Typography variant="h2">Counter from redux is {count}</Typography>
+        <Button variant="contained" onClick={handleAddCount}>
+          add
+        </Button>
+        <Button variant="contained" onClick={handleMinusCount}>
+          minus
+        </Button>
         <Link href="/posts/profile-ssr">
           <h4>
             {t("SSR")}:
