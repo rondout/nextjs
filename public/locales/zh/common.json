@@ -5,5 +5,12 @@
   "SSR": "服务端渲染",
   "blogs": "博客",
   "poems": "诗歌",
-  "solarSystem": "太阳系"
+  "solarSystem": "太阳系",
+  "footer": {
+    "leftSubTtitle": "BlueSphere 是安卓设备管理专家，旨在结合实时代理功能管理和保护您的安卓设备。"
+  },
+  "mainTitle": "管理Android移动设备从未如此轻松",
+  "subtitle": "BlueSphere结合实时代理功能管理和保护您的安卓设备",
+  "startTrial": "开始试用",
+  "setupDemo": "安排演示"
 }

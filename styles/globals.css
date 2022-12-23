@@ -1,32 +1,90 @@
+@font-face {
+  font-family: HarmonyOS_Sans_SC_Regular;
+  src: url(./HarmonyOS_Sans_SC_Regular.ttf);
+}
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  /* font-family: HarmonyOS_Sans_SC_Regular; */
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
 
 a {
-  color: #3f51b5;
   text-decoration: none;
 }
 
-* {
+.content-item {
+  width: 77.5%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 640px) {
+  .content-item {
+    width: 90%;
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-start {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-evenly {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-around {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-end {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.flex-wrap {
+  flex-wrap: wrap;
+}
+.flex-nowrap {
+  flex-wrap: nowrap;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-btw {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.border-box {
   box-sizing: border-box;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+.pointer {
+  cursor: pointer;
 }
 
-h1,
-h2,
-p {
-  margin: 0;
+.relative-position {
+  position: relative;
 }
 
-button {
-  padding: 0.5rem 1rem;
-  font-weight: bold;
+.abs-position {
+  position: absolute;
 }
