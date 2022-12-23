@@ -1,23 +1,129 @@
-import { Box, Typography } from "@mui/material";
+import { alpha, Box, Grid, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "next-i18next";
+import Image from "next/image";
+import Link from "next/link";
 import InnerContent from "../layouts/InnerContent";
+
+const breakPoints = {
+  xs: 12,
+  sm: 6,
+  md: 4,
+  lg: 3,
+};
+
+const noProfessionBreakPoints = {
+  xs: 12,
+  lg: 6,
+};
+
+class ProfessionItem {
+  constructor(
+    public title: string,
+    public imgUrl: string,
+    public href: string
+  ) {}
+}
+
+const professionItems = [
+  new ProfessionItem(
+    "healthcare",
+    "/home/ic_medcine.svg",
+    "/solutions/healthcare"
+  ),
+  new ProfessionItem(
+    "education",
+    "/home/ic_education.svg",
+    "/solutions/education"
+  ),
+  new ProfessionItem("retail", "/home/ic_retail.svg", "/solutions/retail"),
+  new ProfessionItem(
+    "transport",
+    "/home/ic_transport.svg",
+    "/solutions/transport"
+  ),
+  new ProfessionItem(
+    "bussiness",
+    "/home/ic_business.svg",
+    "/solutions/bussiness"
+  ),
+  new ProfessionItem("catering", "/home/ic_hotel.svg", "/solutions/catering"),
+];
 
 export default function ChooseProfession() {
   const mt = useTranslation("main").t;
+  const theme = useTheme();
+
   return (
     <Box
       sx={{
-        backgroundImage: "url(/curved_line_bg.svg)",
+        backgroundImage: "url(/home/curved_line_bg.svg)",
         backgroundSize: "cover",
         maxWidth: 1920,
         margin: "0 auto",
+        pb: 15,
       }}
     >
       <InnerContent>
         <Typography variant="h3" textAlign={"center"} sx={{ pt: 15, mb: 8 }}>
           {mt("chooseProfession")}
         </Typography>
-        <Box sx={{ height: 500 }}></Box>
+        <Box sx={{ width: 80 / 100, m: "0 auto" }}>
+          <Grid container spacing={5}>
+            {professionItems.map((item) => (
+              <Grid key={item.title} className="flex" item {...breakPoints}>
+                <Box
+                  className="flex flex-column"
+                  sx={{
+                    userSelect: "none",
+                    bgcolor: theme.palette.background.default,
+                    height: 192,
+                    width: 224,
+                    boxShadow: `0px 2px 6px rgba(63, 81, 181, 0.08)`,
+                    borderRadius: 2,
+                  }}
+                >
+                  <Image
+                    src={item.imgUrl}
+                    width={64}
+                    height={64}
+                    alt={mt(item.title)}
+                  ></Image>
+                  <Typography sx={{ mt: 3 }}>{mt(item.title)}</Typography>
+                </Box>
+              </Grid>
+            ))}
+            <Grid item {...noProfessionBreakPoints}>
+              <Box
+                sx={{
+                  height: 192,
+                  bgcolor: theme.palette.background.default,
+                  borderRadius: 2,
+                  overflow: "hidden",
+                }}
+              >
+                <Box
+                  sx={{
+                    bgcolor: alpha(theme.palette.primary.main, 0.08),
+                    height: 1,
+                    p: 8,
+                    display: "flex",
+                    alignItems: "flex-start",
+                  }}
+                  className="flex-column border-box"
+                >
+                  <Typography variant="h6" sx={{ mb: 2 }}>
+                    {mt("noProfessionFound")}
+                  </Typography>
+                  <Link href="/">
+                    <Typography color={theme.palette.primary.main}>
+                      {mt("contactBs")}
+                    </Typography>
+                  </Link>
+                </Box>
+              </Box>
+            </Grid>
+          </Grid>
+        </Box>
       </InnerContent>
     </Box>
   );

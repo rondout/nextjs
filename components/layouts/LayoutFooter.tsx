@@ -51,9 +51,9 @@ class SocialMedia {
 }
 
 const socialMedias = [
-  new SocialMedia("/ic_twitter.svg", "ic_twitter"),
-  new SocialMedia("/ic_youtube.svg", "ic_youtube"),
-  new SocialMedia("/ic_bilibili.svg", "bilibili"),
+  new SocialMedia("/home/ic_twitter.svg", "ic_twitter"),
+  new SocialMedia("/home/ic_youtube.svg", "ic_youtube"),
+  new SocialMedia("/home/ic_bilibili.svg", "bilibili"),
 ];
 
 export default function LayoutFooter() {

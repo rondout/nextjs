@@ -26,5 +26,11 @@
   "cookies": "Cookies",
   "chooseProfession": "选择您的行业",
   "noProfessionFound": "没找到您的行业？与BlueSphere联系",
-  "contactBs": "联系BlueSphere"
+  "contactBs": "联系BlueSphere",
+  "deviceManageTitle": "BlueSphere助力您管理业务中的android设备",
+  "quicManage": "快速将设备纳入管理",
+  "quicManageDesc": "零接触注册可以批量进行无接触式设备注册，快速部署数千台设备，并通过配置模板批量远程配置Android设备的功能，实时生效。简易但不简单！",
+  "contentPermissionTitle": "设备访问应用内容权限",
+  "remoteManageTitle": "远程设备管理、监测与诊断",
+  "fileDeployTitle": "应用、文件实时部署 "
 }

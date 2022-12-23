@@ -1,13 +1,11 @@
 import Layout from "../components/layouts/Layout";
-import { alpha, Box, Button, Typography, useTheme } from "@mui/material";
 
 import { serverSideTranslations } from "next-i18next/serverSideTranslations";
 import { useTranslation } from "next-i18next";
 import { GetStaticProps } from "next";
-import InnerContent from "../components/layouts/InnerContent";
-import Image from "next/image";
 import MainTop from "../components/home/MainTop";
 import ChooseProfession from "../components/home/ChooseProfession";
+import DeviceManageIntro from "../components/home/DeviceManageIntro";
 
 export const getStaticProps: GetStaticProps = async function ({ locale }) {
   return {
@@ -18,13 +16,11 @@ export const getStaticProps: GetStaticProps = async function ({ locale }) {
 };
 
 export default function Home() {
-  const { t } = useTranslation("common");
-  const mt = useTranslation("main").t;
-  const theme = useTheme();
   return (
     <Layout>
       <MainTop></MainTop>
       <ChooseProfession></ChooseProfession>
+      <DeviceManageIntro></DeviceManageIntro>
     </Layout>
   );
 }

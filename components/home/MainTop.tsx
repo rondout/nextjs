@@ -40,7 +40,7 @@ export default function MainTop() {
         <Box className="flex" sx={{ overflow: "hidden" }}>
           <Image
             style={{ marginBottom: "-1px" }}
-            src="/index-content-1.png"
+            src="/home/index-content-1.png"
             width={944}
             alt=""
             height={440}
