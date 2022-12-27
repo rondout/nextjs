@@ -73,6 +73,10 @@ a {
   align-items: center;
 }
 
+.items-start {
+  align-items: flex-start;
+}
+
 .border-box {
   box-sizing: border-box;
 }

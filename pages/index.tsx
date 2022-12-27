@@ -6,6 +6,9 @@ import { GetStaticProps } from "next";
 import MainTop from "../components/home/MainTop";
 import ChooseProfession from "../components/home/ChooseProfession";
 import DeviceManageIntro from "../components/home/DeviceManageIntro";
+import CommentItem from "../components/common/CommentItem";
+import ContactItem from "../components/common/ContactItem";
+import LatestNewsItem from "../components/home/LatestNewsItem";
 
 export const getStaticProps: GetStaticProps = async function ({ locale }) {
   return {
@@ -21,6 +24,9 @@ export default function Home() {
       <MainTop></MainTop>
       <ChooseProfession></ChooseProfession>
       <DeviceManageIntro></DeviceManageIntro>
+      <CommentItem></CommentItem>
+      <ContactItem></ContactItem>
+      <LatestNewsItem></LatestNewsItem>
     </Layout>
   );
 }

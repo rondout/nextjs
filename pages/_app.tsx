@@ -6,8 +6,25 @@ import { useMemo, useState } from "react";
 
 const baseFontSize = 14;
 
+declare module "@mui/material/styles" {
+  interface Theme {
+    custom: {
+      pageItemBackImg: string;
+    };
+  }
+  // allow configuration using `createTheme`
+  interface ThemeOptions {
+    custom?: {
+      pageItemBackImg?: string;
+    };
+  }
+}
+
 const generateTheme = (mode: Palette["mode"]) =>
   createTheme({
+    custom: {
+      pageItemBackImg: "linear-gradient(98.9deg, #F3FDFF 0%, #D1DEFF 100%)",
+    },
     palette: { primary: { main: "#3f51b5" }, mode },
     typography: {
       // fontFamily: "HarmonyOS_Sans_SC_Regular",
@@ -41,6 +58,11 @@ const generateTheme = (mode: Palette["mode"]) =>
       h5: {
         fontSize: "1.5rem",
         color: "#0D1024A3",
+      },
+      h6: {
+        fontSize: "1.25rem",
+        color: "rgba(13, 16, 36, 0.88)",
+        fontWeight: 500,
       },
     },
   });
