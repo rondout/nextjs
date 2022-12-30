@@ -67,7 +67,7 @@ export default function LayoutFooter() {
           <Grid sx={{ pb: 10 }} item {...breakPoints}>
             <Box>
               <Typography variant="h4">BlueSphere</Typography>
-              <Typography variant="subtitle1" sx={{ mt: 3, mb: 13.5 }}>
+              <Typography variant="body2" sx={{ mt: 3, mb: 13.5 }}>
                 {t("footer.leftSubTtitle")}
               </Typography>
               <Box className="flex-start">
@@ -101,7 +101,7 @@ export default function LayoutFooter() {
                 </Link>
                 {solutionItems.map((item) => (
                   <Link key={item.title} href={item.href}>
-                    <Typography variant="subtitle1" sx={{ mb: 1.5 }}>
+                    <Typography variant="body2" sx={{ mb: 1.5 }}>
                       {mt(item.title)}
                     </Typography>
                   </Link>
@@ -121,7 +121,7 @@ export default function LayoutFooter() {
                 </Link>
                 {supportItems.map((item) => (
                   <Link key={item.title} href={item.href}>
-                    <Typography variant="subtitle1" sx={{ mb: 1.5 }}>
+                    <Typography variant="body2" sx={{ mb: 1.5 }}>
                       {mt(item.title)}
                     </Typography>
                   </Link>
@@ -130,9 +130,7 @@ export default function LayoutFooter() {
             </Box>
           </Grid>
           <Grid sx={{ pb: 10 }} item {...breakPoints}>
-            <Typography variant="subtitle1">
-              {mt("requestDemoContent")}
-            </Typography>
+            <Typography variant="body2">{mt("requestDemoContent")}</Typography>
             <Button
               sx={{ mt: 5, width: 200, height: 48, borderRadius: 2 }}
               size="large"
@@ -144,14 +142,14 @@ export default function LayoutFooter() {
         </Grid>
       </InnerContent>
       <InnerContent sx={{ pb: 10 }} className="flex-btw flex-wrap">
-        <Typography sx={{ mb: 10 }} variant="subtitle1">
+        <Typography sx={{ mb: 10 }} variant="body2">
           Copyright @ 2022 BlueSphere. Inc. All Rights Reserved.
         </Typography>
         <Box sx={{ mb: 10 }} className="flex">
           {privacyItems.map((item, index) => (
             <Box key={item.title} className="flex">
               <Link href={item.href}>
-                <Typography variant="subtitle1">{mt(item.title)}</Typography>
+                <Typography variant="body2">{mt(item.title)}</Typography>
               </Link>
               {index <= 1 && (
                 <Divider

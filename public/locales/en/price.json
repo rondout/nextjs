@@ -1,0 +1,96 @@
+{
+  "mainTitle": "Choose a plan that suits you",
+  "subTitle": "BlueSphere MDM is the perfect device management solution for any type of organization, big or small.",
+  "billingByMonth": "Billing By Month",
+  "billingByYear": "Billing By Year",
+  "comparePlanDetail": "Compare Plan Details",
+  "perDevicePerYear": "per device per year",
+  "expressTitle": "Best for managing teams with up to 500 Android devices",
+  "proTitle": "Best for teams with more than 500 Android devices and can adopt new products faster",
+  "enterpriseTitle": "Best for enterprise teams with unique requirements",
+  "select": "Select",
+  "contactBs": "Contact BlueSphere",
+  "useBSForFree": "Use BlueSphere for free",
+  "useBSForFreeSub": "Experience professional-level Android device management immediately and manage exclusive devices",
+  "getCustomizedDemo": "Get Customized Demo",
+  "getCustomizedDemoSub": "Book an on-site demo to experience the industry-specific device management solution",
+  "questionTitle": "BlueSphere MDM Pricing FAQ",
+  "howToTrailFree": "How do I start a free trial of the Premium plan?",
+  "paymentMethod": "What is the payment method? Can I pay annually?",
+  "paymentMethodAnswer": "You can pay by credit card (Visa, Mastercard, and North America American Express) or by invoice. Credit card payments are charged monthly or annually.\nIf you choose to pay by invoice, the standard 12/24/36 A monthly contract applies to all devices that will be registered. Invoices can be paid by bank transfer or PayPal. Please contact us if you wish to pay by invoice.",
+  "conIChangePlan": "Can I change my plan at any time?",
+  "canICancel": "Can I cancel anytime?",
+  "discussPrice": "Let's discuss the price together!",
+  "firstName": "first name",
+  "lastName": "last name",
+  "workEmail": "Work Email",
+  "phoneNumber": "Phone Number",
+  "numberOfDevice": "Number of devices",
+  "pricePlan": "Price Plan",
+  "billing": "Payment Method",
+  "requestPrice": "Request a Quote",
+  "deviceQuantityLabels": {
+    "D15": "15-25 units",
+    "D25": "25-35 units"
+  },
+  "planTypes": {
+    "EXPRESS": "EXPRESS",
+    "PRO": "PRO",
+    "ENTERPRISE": "ENTERPRISE"
+  },
+  "billingTypes": {
+    "ANNUAL": "Annual Payment",
+    "QUARTERLY": "Quarterly Payment",
+    "MONTHLY": "Monthly payment"
+  },
+  "functionList": "Function List",
+  "functionListSub": "Comparing function differences between different plans",
+  "regist": "Registration",
+  "registMthod": {
+    "qrCode": "QR code registration",
+    "templateCode": "Template code registration",
+    "IMEI": "IMEI Registration",
+    "SN": "SN registration",
+    "BSProvisioner": "BlueSphere configuration tool registration"
+  },
+  "geoLocation": "Location Tracking",
+  "geoLocations": {
+    "singleDevice": "A single device location view on the map",
+    "geoLocation": "Location Tracking",
+    "locationSyncTime": "Location Sync Time",
+    "saveLocationHistory": "Location History Keep",
+    "geofence": "geofence"
+  },
+  "appManage": "Application Management",
+  "appManages": {
+    "install": "App Install",
+    "uninstall": "App uninstall",
+    "versionManage": "Version Management",
+    "mandatoryApp": "Mandatory App",
+    "whiteList": "App Whitelist",
+    "blackList": "App Blacklist"
+  },
+  "remoteDeployAndConfig": "Remote deployment and configuration",
+  "remoteDeployAndConfigs": {
+    "customConfigFile": "Custom Configuration File",
+    "kiosk": "Kiosk Mode",
+    "pwdConfig": "Password Settings",
+    "deviceRestrictions": "Device usage restrictions",
+    "wifiConfig": "WIFI Settings",
+    "wallpaperConfig": "Wallpaper Settings",
+    "remoteCtrl": "Remote projection and control"
+  },
+  "fileManage": "File Management",
+  "fileManages": {
+    "fileManage": "File Management",
+    "storage": "storage space",
+    "digitalSignage": "Digital Signage"
+  },
+  "browser": "Browser",
+  "browsers": {
+    "android": "Android Kiosk Browser",
+    "whiteList": "Whitelist URLs",
+    "blackList": "Blacklist URL",
+    "webContentFilter": "Web Content Filter"
+  }
+}

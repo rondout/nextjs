@@ -28,7 +28,7 @@ const rightAccordionItems = [
   { title: "fileDeployTitle", desc: "quicManageDesc" },
 ];
 
-const StyledAccordion = styled((props: AccordionProps) => {
+export const StyledAccordion = styled((props: AccordionProps) => {
   return <Accordion disableGutters square {...props}></Accordion>;
 })(({ theme }) => {
   const lightThemeColor = alpha(theme.palette.primary.main, 0.08);
@@ -37,7 +37,7 @@ const StyledAccordion = styled((props: AccordionProps) => {
     boxShadow: "none",
     backgroundColor: lightThemeColor,
     "&.Mui-expanded": {
-      boxShadow: `0px 2px 6px ${lightThemeColor}`,
+      boxShadow: theme.custom.boxShadow,
       backgroundColor: theme.palette.background.default,
     },
   };
@@ -69,7 +69,7 @@ export default function DeviceManageIntro() {
       }}
     >
       <InnerContent>
-        <Typography variant="h3" textAlign={"center"} sx={{ pt: 15, mb: 8 }}>
+        <Typography variant="h4" textAlign={"center"} sx={{ pt: 15, mb: 8 }}>
           {mt("deviceManageTitle")}
         </Typography>
         <Grid container spacing={6}>
@@ -120,7 +120,7 @@ export default function DeviceManageIntro() {
                         </Typography>
                       </AccordionSummary>
                       <AccordionDetails sx={{ px: 3 }}>
-                        <Typography sx={{ mb: 1 }} variant="subtitle1">
+                        <Typography sx={{ mb: 1 }} variant="body2">
                           {mt(item.desc)}
                         </Typography>
                       </AccordionDetails>

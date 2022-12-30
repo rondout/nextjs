@@ -24,7 +24,6 @@ export default function ContactItem() {
       <InnerContent sx={{ py: 20 }}>
         <Typography
           variant="h3"
-          fontSize={"3rem"}
           fontWeight={700}
           color="#fff"
           sx={{ mb: 8 }}

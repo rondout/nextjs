@@ -23,5 +23,18 @@
   "startTrail": "Start Trail",
   "privacy": "Privacy",
   "termsOfUse": "Terms of Use",
-  "cookies": "Cookies"
+  "cookies": "Cookies",
+  "chooseProfession": "Choose your profession",
+  "noProfessionFound": "Didn't find your profession? Contact BlueSphere",
+  "contactBs": "Contact BlueSphere",
+  "deviceManageTitle": "BlueSphere helps you manage Android devices in your business",
+  "quicManage": "quickly manage devices",
+  "quicManageDesc": "Zero-contact registration can perform contactless device registration in batches, quickly deploy thousands of devices, and remotely configure the functions of Android devices in batches through configuration templates, which will take effect in real time. Simple but not simple!",
+  "contentPermissionTitle": "Device access to application content permissions",
+  "remoteManageTitle": "Remote device management, monitoring and diagnosis",
+  "fileDeployTitle": "Real-time deployment of applications and files",
+  "contactTitle": "Hearing is believing, seeing is believing, come and experience it for yourself",
+  "noCreditCard": "No credit card required",
+  "trailForFree": "Free Trial",
+  "latestNews": "Latest News"
 }

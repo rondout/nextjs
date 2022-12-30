@@ -28,17 +28,26 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
         sx={{
           zIndex: 10,
           bgcolor: theme.palette.background.default,
-          boxShadow: "0px 2px 6px rgb(63 81 181 / 8%)",
+          boxShadow: theme.custom.boxShadow,
           position: "sticky",
           top: 0,
         }}
       >
         <header className={styles.headerTop + " flex-end content-item"}>
           <Link href={"/"}>
-            <Typography variant="body2">{t("demo")}</Typography>
+            <Typography
+              color={(theme) => theme.palette.text.secondary}
+              variant="body3"
+            >
+              {t("demo")}
+            </Typography>
           </Link>
           <Link href={"/api/hello"}>
-            <Typography sx={{ ml: 3 }} variant="body2">
+            <Typography
+              color={(theme) => theme.palette.text.secondary}
+              sx={{ ml: 3 }}
+              variant="body3"
+            >
               {t("login")}
             </Typography>
           </Link>
@@ -56,27 +65,27 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
           <Box className="flex">
             <Box sx={{ px: 2 }}>
               <Link href={"/"}>
-                <Typography variant="subtitle1">{t("solutions")}</Typography>
+                <Typography variant="body2">{t("solutions")}</Typography>
+              </Link>
+            </Box>
+            <Box sx={{ px: 2 }}>
+              <Link href={"/price"}>
+                <Typography variant="body2">{t("price")}</Typography>
               </Link>
             </Box>
             <Box sx={{ px: 2 }}>
               <Link href={"/"}>
-                <Typography variant="subtitle1">{t("price")}</Typography>
+                <Typography variant="body2">{t("cooperator")}</Typography>
               </Link>
             </Box>
             <Box sx={{ px: 2 }}>
               <Link href={"/"}>
-                <Typography variant="subtitle1">{t("cooperator")}</Typography>
+                <Typography variant="body2">{t("support")}</Typography>
               </Link>
             </Box>
             <Box sx={{ px: 2 }}>
               <Link href={"/"}>
-                <Typography variant="subtitle1">{t("support")}</Typography>
-              </Link>
-            </Box>
-            <Box sx={{ px: 2 }}>
-              <Link href={"/"}>
-                <Typography variant="subtitle1">{t("contact")}</Typography>
+                <Typography variant="body2">{t("contact")}</Typography>
               </Link>
             </Box>
             <Link href={"/"}>

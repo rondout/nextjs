@@ -6,8 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "export":"next export"
+    "lint": "next lint"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",
@@ -23,6 +22,7 @@
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
     "i18next": "^22.4.6",
+    "leaflet": "^1.9.3",
     "next": "13.0.7",
     "next-i18next": "^13.0.2",
     "react": "18.2.0",

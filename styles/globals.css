@@ -73,8 +73,16 @@ a {
   align-items: center;
 }
 
+.flex-1 {
+  flex: 1;
+}
+
 .items-start {
   align-items: flex-start;
+}
+
+.items-end {
+  align-items: flex-end;
 }
 
 .border-box {
@@ -91,4 +99,14 @@ a {
 
 .abs-position {
   position: absolute;
+}
+
+.text-ellipsis {
+  overflow: hidden;
+  box-orient: vertical;
+  -webkit-box-orient: vertical;
+  line-clamp: 1;
+  /* -webkit-line-clamp: 1; */
+  text-overflow: ellipsis;
+  display: -webkit-box;
 }

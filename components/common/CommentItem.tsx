@@ -18,13 +18,17 @@ export default function CommentItem() {
             p: 7,
             bgcolor: background.default,
             borderRadius: 2,
-            boxShadow: `0px 2px 6px ${alpha(primary.main, 0.08)}`,
+            boxShadow: (theme) => theme.custom.boxShadow,
           }}
           className="flex items-start flex-wrap"
         >
           <Box sx={{ flex: 1, height: 1, mr: 4 }}>
             <Box className="relative-position">
-              <Typography sx={{ whiteSpace: "nowrap" }} variant="body1">
+              <Typography
+                sx={{ whiteSpace: "nowrap" }}
+                color={(theme) => theme.palette.text.primary}
+                variant="body2"
+              >
                 From our users
               </Typography>
               <Box
@@ -37,7 +41,7 @@ export default function CommentItem() {
                 className="abs-position"
               ></Box>
             </Box>
-            <Typography sx={{ mt: 101 / 8, mb: 7 }} fontSize="1rem">
+            <Typography sx={{ mt: 101 / 8, mb: 7 }}>
               As someone in a Support leadership role, it means a lot to get my
               team more insight into how their hard work translates into a
               happier experience for our customers. Using Temper helps us know
@@ -50,7 +54,7 @@ export default function CommentItem() {
                 <Typography variant="h6" fontWeight={"bold"}>
                   JOSH D.
                 </Typography>
-                <Typography variant="subtitle1" sx={{ mt: 0.5 }}>
+                <Typography variant="body2" sx={{ mt: 0.5 }}>
                   Sales engineer
                 </Typography>
               </Box>

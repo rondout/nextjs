@@ -11,10 +11,7 @@ export default function MainTop() {
   return (
     <Box
       sx={{
-        background: `linear-gradient(180deg, ${alpha(
-          theme.palette.primary.main,
-          0
-        )}, ${alpha(theme.palette.primary.main, 0.12)})`,
+        background: theme.custom.bgLinerGradient,
       }}
     >
       <InnerContent sx={{}}>

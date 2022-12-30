@@ -1,0 +1,96 @@
+{
+  "mainTitle": "选择适合您的计划",
+  "subTitle": "BlueSphere MDM是任何类型的组织（无论大小）的完美设备管理解决方案。",
+  "billingByMonth": "按月计费",
+  "billingByYear": "按年计费",
+  "comparePlanDetail": "比较计划细节",
+  "perDevicePerYear": "每设备每年",
+  "expressTitle": "最适合拥有最多500台Android设备的团队进行管理使用",
+  "proTitle": "最适合拥有500台以上Android设备的团队并且能更快的使用新产品",
+  "enterpriseTitle": "最适合拥有独特要求的企业团队",
+  "select": "选择",
+  "contactBs": "联系BlueSphere",
+  "useBSForFree": "免费使用BlueSphere",
+  "useBSForFreeSub": "立即体验专业级Android设备管理，管理专属设备",
+  "getCustomizedDemo": "获取个性化演示",
+  "getCustomizedDemoSub": "预约现场演示，体验行业专属设备管理解决方案",
+  "questionTitle": "BlueSphere MDM 定价常见问题",
+  "howToTrailFree": "如何启动免费试用高级计划？",
+  "paymentMethod": "付款方式是什么？我可以每年支付吗？",
+  "paymentMethodAnswer": "您可以使用信用卡（Visa、万事达卡和北美美国运通）或发票付款。信用卡付款按月或按年收取。\n如果您选择通过发票付款，则标准的12/24/36个月合同适用于所有将注册的设备。发票可以通过银行转账或PayPal支付。如果您希望通过发票付款，请联系我们。",
+  "conIChangePlan": "我可以随时改变计划吗？",
+  "canICancel": "我可以随时取消吗？",
+  "discussPrice": "让我们一起讨论下价格！",
+  "firstName": "名",
+  "lastName": "姓",
+  "workEmail": "工作邮箱",
+  "phoneNumber": "电话号码",
+  "numberOfDevice": "设备数量",
+  "pricePlan": "价格计划",
+  "billing": "支付方式",
+  "requestPrice": "请求报价",
+  "deviceQuantityLabels": {
+    "D15": "15-25台",
+    "D25": "25-35台"
+  },
+  "planTypes": {
+    "EXPRESS": "EXPRESS",
+    "PRO": "PRO",
+    "ENTERPRISE": "ENTERPRISE"
+  },
+  "billingTypes": {
+    "ANNUAL": "年度支付",
+    "QUARTERLY": "季度支付",
+    "MONTHLY": "月度支付"
+  },
+  "functionList": "功能列表",
+  "functionListSub": "对比不同计划间的功能差异",
+  "regist": "注册",
+  "registMthod": {
+    "qrCode": "二维码注册",
+    "templateCode": "模板代码注册",
+    "IMEI": "IMEI号注册",
+    "SN": "SN号注册",
+    "BSProvisioner": "BlueSphere配置工具注册"
+  },
+  "geoLocation": "位置追踪",
+  "geoLocations": {
+    "singleDevice": "地图上单个设备的位置视图",
+    "geoLocation": "位置追踪",
+    "locationSyncTime": "位置同步时间",
+    "saveLocationHistory": "位置记录保留",
+    "geofence": "地理围栏"
+  },
+  "appManage": "应用程序管理",
+  "appManages": {
+    "install": "应用安装",
+    "uninstall": "应用卸载",
+    "versionManage": "版本管理",
+    "mandatoryApp": "强制性应用",
+    "whiteList": "应用白名单",
+    "blackList": "应用黑名单"
+  },
+  "remoteDeployAndConfig": "远程部署和配置",
+  "remoteDeployAndConfigs": {
+    "customConfigFile": "自定义配置文件",
+    "kiosk": "Kiosk模式",
+    "pwdConfig": "密码设置",
+    "deviceRestrictions": "设备使用限制",
+    "wifiConfig": "WIFI设置",
+    "wallpaperConfig": "壁纸设置",
+    "remoteCtrl": "远程投射和控制"
+  },
+  "fileManage": "文件管理",
+  "fileManages": {
+    "fileManage": "文件管理",
+    "storage": "存储空间",
+    "digitalSignage": "数字标牌"
+  },
+  "browser": "浏览器",
+  "browsers": {
+    "android": "Android自助服务终端浏览器",
+    "whiteList": "白名单URL",
+    "blackList": "黑名单URL",
+    "webContentFilter": "网页内容过滤"
+  }
+}
