@@ -1,8 +1,6 @@
 import L, { LatLngTuple, Layer, Map, Point } from "leaflet";
 import { CSSProperties, useCallback, useEffect, useState } from "react";
 
-console.log(L.markerClusterGroup);
-
 interface CreateMapProps {
   id: string;
   center?: LatLngTuple;

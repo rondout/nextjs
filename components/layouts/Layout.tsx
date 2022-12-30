@@ -13,7 +13,7 @@ interface LayoutProps {
 
 export default function Layout(props: PropsWithChildren<LayoutProps>) {
   // const t = useTranslation("common").t;
-  const { t } = useTranslation("main");
+  const { t } = useTranslation("common");
   const theme = useTheme();
 
   const { title = "BlueSphere MDM", children } = props;
@@ -64,7 +64,7 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
           </Link>
           <Box className="flex">
             <Box sx={{ px: 2 }}>
-              <Link href={"/"}>
+              <Link href={"/solutions/healthcare"}>
                 <Typography variant="body2">{t("solutions")}</Typography>
               </Link>
             </Box>

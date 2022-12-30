@@ -7,7 +7,7 @@ import PriceCompareTop from "../../components/price/PriceCompareTop";
 export const getStaticProps: GetStaticProps = async function ({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["price", "main", "common"])),
+      ...(await serverSideTranslations(locale, ["price", "common"])),
     },
   };
 };

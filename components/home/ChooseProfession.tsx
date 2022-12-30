@@ -51,13 +51,13 @@ const professionItems = [
 
 export default function ChooseProfession() {
   const mt = useTranslation("main").t;
+  const ct = useTranslation("common").t;
   const theme = useTheme();
 
   return (
     <Box
       sx={{
-        background:
-          "linear-gradient(98.09deg, rgba(248, 254, 255, 0.3) 0%, rgba(219, 227, 249, 0.3) 100%)",
+        background: theme.custom.customLinearBg,
         // backgroundImage: "url(/home/curved_line_bg.svg)",
         backgroundSize: "cover",
       }}
@@ -96,9 +96,9 @@ export default function ChooseProfession() {
                       src={item.imgUrl}
                       width={64}
                       height={64}
-                      alt={mt(item.title)}
+                      alt={ct(item.title)}
                     ></Image>
-                    <Typography sx={{ mt: 3 }}>{mt(item.title)}</Typography>
+                    <Typography sx={{ mt: 3 }}>{ct(item.title)}</Typography>
                   </Box>
                 </Grid>
               ))}

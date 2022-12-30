@@ -57,8 +57,7 @@ const socialMedias = [
 ];
 
 export default function LayoutFooter() {
-  const { t } = useTranslation();
-  const mt = useTranslation("main").t;
+  const mt = useTranslation("common").t;
 
   return (
     <Fragment>
@@ -68,7 +67,7 @@ export default function LayoutFooter() {
             <Box>
               <Typography variant="h4">BlueSphere</Typography>
               <Typography variant="body2" sx={{ mt: 3, mb: 13.5 }}>
-                {t("footer.leftSubTtitle")}
+                {mt("footer.leftSubTtitle")}
               </Typography>
               <Box className="flex-start">
                 {socialMedias.map((item) => (

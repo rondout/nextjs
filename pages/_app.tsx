@@ -32,6 +32,7 @@ declare module "@mui/material/styles" {
       boxShadow: string;
       bgLinerGradient: string;
       priceFormBgcolor: string;
+      customLinearBg: string;
     };
     // typography
   }
@@ -42,6 +43,7 @@ declare module "@mui/material/styles" {
       boxShadow?: string;
       bgLinerGradient?: string;
       priceFormBgcolor?: string;
+      customLinearBg?: string;
     };
   }
 }
@@ -57,6 +59,8 @@ const generateTheme = (mode: Palette["mode"], themeColor = "#3f51b5") => {
         0
       )}, ${alpha(themeColor, 0.12)})`,
       priceFormBgcolor: "#EFF5FA",
+      customLinearBg:
+        "linear-gradient(98.09deg, rgba(248, 254, 255, 0.3) 0%, rgba(219, 227, 249, 0.3) 100%)",
     },
     palette: {
       primary: {

@@ -14,11 +14,11 @@ export default function MainTop() {
         background: theme.custom.bgLinerGradient,
       }}
     >
-      <InnerContent sx={{}}>
+      <InnerContent sx={{ pt: 15 }}>
         <Typography
           fontWeight={700}
           textAlign={"center"}
-          sx={{ my: 15, mb: 2 }}
+          sx={{ mb: 2 }}
           variant="h2"
         >
           {t("mainTitle")}

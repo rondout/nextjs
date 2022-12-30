@@ -7,7 +7,7 @@ import {
   useTheme,
 } from "@mui/material";
 import { memo, useMemo, useState } from "react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "next-i18next";
 import { CustomOperationMenu, MatFormItemProps } from "../../model/tool.model";
 import { isNull } from "../../model/tool.model";
 import countryData, { CountryData } from "../../model/countryData.model";

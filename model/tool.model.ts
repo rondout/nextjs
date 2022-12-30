@@ -100,3 +100,11 @@ export interface MatFormItemProps<T = string> {
 export function isNull(param: any): boolean {
   return [null, undefined, ""].includes(param);
 }
+
+export function calculateBreakpointsByRatio(
+  itemLeft: number,
+  itemRight: number
+) {
+  const left = (12 * itemLeft) / (itemLeft + itemRight);
+  return [left, 12 - left];
+}
