@@ -6,31 +6,18 @@ import "../styles/globals.css";
 import store from "../store";
 
 function App({ Component, pageProps }) {
-  const [mode, setMode] = useState("light");
-  const theme = useMemo(() => {
-    return createTheme({
-      palette: { primary: { main: "#3f51b5" }, mode },
-      // typography: {},
-    });
-  }, [mode]);
+  // const [mode, setMode] = useState("light");
+  // const theme = useMemo(() => {
+  //   return createTheme({
+  //     palette: { primary: { main: "#3f51b5" }, mode },
+  //     // typography: {},
+  //   });
+  // }, [mode]);
 
-  const modeReflect = useMemo(() => {
-    if (mode === "light") {
-      return "dark";
-    } else {
-      return "light";
-    }
-  }, [mode]);
-
-  const changeMode = () => {
-    setMode(modeReflect);
-  };
   return (
     <Provider store={store}>
-      <ThemeProvider theme={theme}>
-        <Button onClick={changeMode}>To {modeReflect}</Button>
-        <Component {...pageProps} />
-      </ThemeProvider>
+      {/* <Button onClick={changeMode}>To {modeReflect}</Button> */}
+      <Component {...pageProps} />
     </Provider>
   );
 }
