@@ -10,6 +10,7 @@ import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import Link from "next/link";
 import { Fragment } from "react";
+import { LinkItem } from "../../model/tool.model";
 import InnerContent from "./InnerContent";
 
 const breakPoints = {
@@ -18,26 +19,22 @@ const breakPoints = {
   lg: 4,
 };
 
-class LinkItem {
-  constructor(public title: string, public href: string) {}
-}
-
 const solutionItems = [
   new LinkItem("healthcare", "/solutions/healthcare"),
   new LinkItem("education", "/solutions/education"),
   new LinkItem("retail", "/solutions/retail"),
   new LinkItem("transport", "/solutions/transport"),
-  new LinkItem("bussiness", "/solutions/bussiness"),
+  new LinkItem("business", "/solutions/business"),
   new LinkItem("catering", "/solutions/catering"),
 ];
 
 const supportItems = [
-  new LinkItem("productDoc", "/solutions/healthcare"),
-  new LinkItem("blogs", "/solutions/education"),
-  new LinkItem("news", "/solutions/retail"),
-  new LinkItem("aboutBs", "/solutions/transport"),
-  new LinkItem("price", "/solutions/bussiness"),
-  new LinkItem("cooperator", "/solutions/catering"),
+  new LinkItem("productDoc", "/documents"),
+  new LinkItem("blogs", "/blogs"),
+  new LinkItem("news", "/news"),
+  new LinkItem("aboutBs", "/about"),
+  new LinkItem("price", "/price"),
+  new LinkItem("cooperator", "/partner"),
 ];
 
 const privacyItems = [

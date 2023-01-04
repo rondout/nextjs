@@ -9,6 +9,8 @@ import {
 } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Link from "next/link";
+import { ChangeEvent, useState } from "react";
+import { BillingTypes } from "../../model/base.model";
 import { StyledCard } from "../home/LatestNewsItem";
 import InnerContent from "../layouts/InnerContent";
 import PricePlanItem from "./PricePlanItem";
@@ -22,6 +24,16 @@ const breakPoints = {
 export default function PriceMainTop() {
   const theme = useTheme();
   const pt = useTranslation("price").t;
+  const [selectedBillingType, setBillingType] = useState(BillingTypes.ANNUAL);
+
+  const onSwitchChange = (event: ChangeEvent<HTMLInputElement>) => {
+    if (event.target.checked) {
+      setBillingType(BillingTypes.ANNUAL);
+    } else {
+      setBillingType(BillingTypes.MONTHLY);
+    }
+  };
+
   return (
     <Box>
       {/* <Box sx={{ height: 984 }}> */}
@@ -65,9 +77,25 @@ export default function PriceMainTop() {
             {pt("subTitle")}
           </Typography>
           <Box className="flex" sx={{ mb: 9 }}>
-            <Typography variant="body1">{pt("billingByMonth")}</Typography>
-            <Switch checked sx={{ mx: 1 }}></Switch>
-            <Typography variant="body1">{pt("billingByYear")}</Typography>
+            <Typography
+              variant="body1"
+              className="pointer"
+              onClick={() => setBillingType(BillingTypes.MONTHLY)}
+            >
+              {pt("billingByMonth")}
+            </Typography>
+            <Switch
+              onChange={onSwitchChange}
+              checked={selectedBillingType === BillingTypes.ANNUAL}
+              sx={{ mx: 1 }}
+            ></Switch>
+            <Typography
+              variant="body1"
+              className="pointer"
+              onClick={() => setBillingType(BillingTypes.ANNUAL)}
+            >
+              {pt("billingByYear")}
+            </Typography>
           </Box>
           <Box sx={{ width: 0.9, m: "auto" }}>
             <Grid container spacing={7}>
@@ -80,14 +108,17 @@ export default function PriceMainTop() {
                     py: 8,
                     mb: 1,
                   }}
+                  className="flex-btw flex-column"
                   // sx={{ bgcolor: "#000", px: 5, py: 8 }}
                 >
-                  <PricePlanItem
-                    title="Express"
-                    price="$4"
-                    desc={pt("perDevicePerYear")}
-                  ></PricePlanItem>
-                  <Typography sx={{ my: 5 }}>{pt("expressTitle")}</Typography>
+                  <Box>
+                    <PricePlanItem
+                      title="Express"
+                      price="$4"
+                      desc={pt("perDevicePerYear")}
+                    ></PricePlanItem>
+                    <Typography sx={{ my: 5 }}>{pt("expressTitle")}</Typography>
+                  </Box>
                   <Box className="flex">
                     <Button sx={{ width: 184 }} variant="contained">
                       {pt("select")}
@@ -105,13 +136,16 @@ export default function PriceMainTop() {
                     mb: 1,
                   }}
                   // sx={{ bgcolor: "#000", px: 5, py: 8 }}
+                  className="flex-btw flex-column"
                 >
-                  <PricePlanItem
-                    title="Pro"
-                    price="$3"
-                    desc={pt("perDevicePerYear")}
-                  ></PricePlanItem>
-                  <Typography sx={{ my: 5 }}>{pt("proTitle")}</Typography>
+                  <Box>
+                    <PricePlanItem
+                      title="Pro"
+                      price="$3"
+                      desc={pt("perDevicePerYear")}
+                    ></PricePlanItem>
+                    <Typography sx={{ my: 5 }}>{pt("proTitle")}</Typography>
+                  </Box>
                   <Box className="flex">
                     <Button sx={{ width: 184 }} variant="contained">
                       {pt("contactBs")}

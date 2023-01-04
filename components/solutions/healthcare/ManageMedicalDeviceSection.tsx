@@ -1,7 +1,5 @@
-import { alpha, Box, Grid, lighten, Typography, useTheme } from "@mui/material";
+import { Box, Grid, lighten, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "next-i18next";
-import Image from "next/image";
-import Link from "next/link";
 import InnerContent from "../../layouts/InnerContent";
 import SvgIcon from "../../tools/SvgIcon";
 
@@ -30,7 +28,7 @@ const cardItems = [
 ];
 
 export default function ManageMedicalDeviceSection() {
-  const t = useTranslation("solutions").t;
+  const t = useTranslation("healthcare").t;
   const theme = useTheme();
 
   return (
@@ -58,13 +56,14 @@ export default function ManageMedicalDeviceSection() {
               {cardItems.map((item) => (
                 <Grid key={item.title} item {...breakPoints}>
                   <Box
-                    className="pointer"
+                    className="pointer border-box"
                     sx={{
                       userSelect: "none",
                       bgcolor: theme.palette.background.default,
                       boxShadow: theme.custom.boxShadow,
                       borderRadius: 2,
                       px: 3,
+                      height: 1,
                       py: 5,
                       "&:hover": {
                         bgcolor: lighten(theme.palette.primary.main, 0.9),

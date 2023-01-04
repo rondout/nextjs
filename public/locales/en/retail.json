@@ -1,0 +1,29 @@
+{
+  "contactTitle": "BlueSphere MDM provides more possibilities for the retail industry",
+  "stockManage": "Inventory Management",
+  "stockManageTitle": "Improve capital and inventory information, greatly saving management costs",
+  "stockManageSubTitle": "BlueSphere MDM can convert any Android device into a self-service scanning terminal. Through terminals and barcodes, it assists enterprises to effectively manage warehousing business, realizes free flow between warehousing and data management, information sharing and paperless office, and improves warehouse management. Operational efficiency. It can assist warehouse employees in on-site operations, collect more efficient and accurate operation data, and has strong error-proof reminders to accelerate storage safety and informatization.",
+  "useThisOnBs": "Try this feature on BlueSphere now",
+  "selfService": "Self-Service Terminal",
+  "selfServiceTitle": "Let the device be retail-centric and use self-service terminals to improve transaction efficiency",
+  "selfServiceSubTitle": "BlueSphere MDM allows you to convert mobile devices into self-service terminals, restrict device access to applications, files, and web pages, and restrict the installation of other applications on Android devices, creating a safer and more convenient shopping environment for customers, optimizing Customer shopping experience. Improve employee productivity and transaction rates by locking devices to retail-specific apps, enabling quick transactions and faster checkouts.",
+  "registThisOnBs": "Register this device on BlueSphere now",
+  "kiosk": "Digital Kiosk",
+  "kioskTitle": "Turn your device into a digital kiosk with engaging scripts and ads",
+  "kioskSubTitle": "Digital booths can publish a large amount of advertising information, continuously scroll and broadcast multiple advertising information, and can play sounds, animations, etc., with rich content, wide communication modes, and quick results, which greatly saves product publicity costs and improves product quality. Improve the publicity effect. Using BlueSphere MDM, you do not need to purchase special digital booth equipment, you can register any Android device on the cloud platform to convert it into a digital booth, and manage your advertising resources in real time.",
+  "transferDeviceToKiosk": "Transfer a device into a digital kiosk",
+  "retail": "Retail",
+  "retailTitle": "Reconstruct the operation mode of the retail industry to help enterprises operate",
+  "retailSubTitle": "Manage and control mobile devices used in retail stores, brick-and-mortar stores and malls",
+  "startToUse": "Start Trial",
+  "scheduleADemo": "Schedule a demo",
+  "iconTextTitle": "Today, touch display terminals can be seen everywhere in various offline retail stores and shopping malls",
+  "iconTexts": {
+    "1": "Large screen shopping guide terminal",
+    "2": "Digital Booth",
+    "3": "Information Inquiry Machine",
+    "4": "Self-Service Terminal",
+    "5": "Self-service cash register",
+    "6": "POS all-in-one machine"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "contactTitle": "BlueSphere MDM定义餐饮、酒店消费新体验",
+  "catering": "餐饮酒店",
+  "cateringTitle": "新型服务方式，提供顾客全新体验",
+  "cateringSubTitle": "数字展台、自助服务，简化餐厅与酒店运营方式",
+  "selfServiceTerminalManage": "自助服务终端管理",
+  "selfServiceTerminalManageTitle": "自助服务终端为顾客提供便捷，节约人力资源成本",
+  "selfServiceTerminalManageSubTitle": "传统餐饮酒店业采用人工服务模式，沟通低效繁琐。BlueSphere MDM Kiosk模式可以将任意移动设备锁定为自助服务终端，顾客可以在有自助终端的任意地方实现自助服务，有效降低了人力成本，提升顾客的消费体验。远程故障排除与恢复功能能够快速解决设备出现的错误，您无需担心设备人员值守问题，只需将设备交给Bluesphere MDM。",
+  "useThisOnBs": "使用BlueSphere管理自助服务终端",
+  "deviceAccessManage": "设备权限管理",
+  "deviceAccessManageTitle": "对员工和客用设备进行定制化权限设置，简化运营流程",
+  "deviceAccessManageSubTitle": "BlueSphere MDM通过限制员工可访问应用、网页、文件等权限，为员工创造更高效的工作环境，确保员工专注于自己的工作，不受其余信息干扰。将客用平板等移动设备转变为专属自助服务终端，让顾客享受专属便捷服务，提升顾客消费体验，这保障了一个更安全、高效、简化的服务环境。",
+  "useBsToManageMobileDevice": "使用BlueSphere管理移动设备",
+  "kiosk": "数字展台",
+  "kioskTitle": "在设备上展示专属您餐厅、酒店的标志，统一品牌体验",
+  "kioskSubTitle": "品牌是企业的一种无形资产，它所包含的价值、个性、品质等特征都能给产品带来重要的价值。品牌能够帮助企业塑造良好的形象，帮助消费者辨认出信赖的品牌。使用BlueSphere MDM将您的餐厅、酒店标志自定义展示在所有移动设备终端上，为顾客提供统一的品牌体验，增加品牌的知名度与辨识度。",
+  "customOwnMark": "立即开始自定义专属标志 ",
+  "iconTextTitle": "如今，在餐饮酒店行业中随处可见触控显示终端的身影",
+  "iconTexts": {
+    "1": "数字展台",
+    "2": "自助值机",
+    "3": "交互式信息亭",
+    "4": "自助电子点餐",
+    "5": "POS一体机",
+    "6": "后厨操作可视"
+  }
+}

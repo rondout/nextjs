@@ -1,0 +1,21 @@
+{
+  "contactTitle": "BlueSphere MDM助力物流运输业务",
+  "transport": "物流运输",
+  "transportTitle": "助力您的物流运输，加速交付时间",
+  "transportSubTitle": "使用BlueSphere MDM优化供应链周期，完善客户体验",
+  "deviceManage": "员工设备管理",
+  "deviceManageTitle": "限制司机设备访问应用、文件与网站，创造更高效更安全的工作环境",
+  "deviceManageSubTitle": "BlueSphere MDM允许你限定员工设备访问应用、文件、网页权限并限制其安装安卓设备上的其他应用；通过禁用不必要的表单自动填充、javascript、弹出窗口、cookie 和历史记录，为司机创造更安全的浏览器环境，确保司机不受无关信息叨扰。这保障了一个更安全更高效的工作环境，帮助司机专注于工作，提高道路安全。",
+  "useBsToManageDevice": "使用BlueSphere MDM管理员工设备",
+  "geolocation": "位置追踪",
+  "geolocationTitle": "实时位置追踪，密切关注资产位置，保护设备安全，减少不必的损失",
+  "geolocationSubTitle": "实时跟踪设备并设置虚拟地理围栏确保运输任务顺利高效地执行，更快地完成货物交付，提高客户满意度。通过强制执行密码、加密来保护员工设备。如遇设备丢失情况，可采用远程锁定和擦除设备数据，保护设备数据安全，还可根据GPS高精度定位跟踪设备丢失位置，帮助您找回设备，减少资产损失。",
+  "goProtectDevice": "立即保护设备安全",
+  "functionSectionTitle": "一个平台轻松解决物流运输难题",
+  "recorder": "电子记录仪",
+  "truck_manage": "车队管理",
+  "ontime_deliver": "准时交付",
+  "remote_fix": "远程故障排除",
+  "pref_route": "优化送货路线",
+  "route_security": "道路安全"
+}

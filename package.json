@@ -16,6 +16,7 @@
     "@mui/material": "^5.2.4",
     "@mui/styles": "^5.2.3",
     "@next/font": "13.0.7",
+    "@reduxjs/toolkit": "^1.9.1",
     "@types/leaflet": "^1.9.0",
     "@types/leaflet.markercluster": "^1.5.1",
     "@types/node": "18.11.17",
@@ -31,6 +32,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-i18next": "^12.1.1",
+    "react-redux": "^8.0.5",
     "styled-components": "^5.3.6",
     "typescript": "4.9.4"
   }

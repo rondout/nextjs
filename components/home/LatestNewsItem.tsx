@@ -1,12 +1,4 @@
-import {
-  Box,
-  Button,
-  Card,
-  Grid,
-  styled,
-  Typography,
-  useTheme,
-} from "@mui/material";
+import { Box, Button, Card, Grid, styled, Typography } from "@mui/material";
 import InnerContent from "../layouts/InnerContent";
 import { useTranslation } from "next-i18next";
 import { useMemo } from "react";
@@ -44,7 +36,6 @@ export const StyledCard = styled(Card)(({ theme }) => {
 
 export default function LatestNewsItem(props: { news: NewsItem[] }) {
   const mt = useTranslation("main").t;
-  const theme = useTheme();
 
   const newsWithImgs = useMemo(() => {
     const [item1, item2] = props.news;

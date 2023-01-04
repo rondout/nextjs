@@ -108,3 +108,7 @@ export function calculateBreakpointsByRatio(
   const left = (12 * itemLeft) / (itemLeft + itemRight);
   return [left, 12 - left];
 }
+
+export class LinkItem {
+  constructor(public title: string, public href: string) {}
+}

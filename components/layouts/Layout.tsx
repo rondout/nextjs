@@ -6,6 +6,10 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import LayoutFooter from "./LayoutFooter";
 import InnerContent from "./InnerContent";
+import MatDropdown from "../tools/MatDropdown";
+import SolutionMenu from "./SolutionMenu";
+import SvgIcon from "../tools/SvgIcon";
+import SupportMenu from "./SupportMenu";
 
 interface LayoutProps {
   title?: string;
@@ -62,37 +66,77 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
           <Link href="/">
             <Typography variant="h4">BlueSphere</Typography>
           </Link>
-          <Box className="flex">
-            <Box sx={{ px: 2 }}>
-              <Link href={"/solutions/healthcare"}>
-                <Typography variant="body2">{t("solutions")}</Typography>
-              </Link>
-            </Box>
-            <Box sx={{ px: 2 }}>
-              <Link href={"/price"}>
-                <Typography variant="body2">{t("price")}</Typography>
-              </Link>
-            </Box>
-            <Box sx={{ px: 2 }}>
+          <Box sx={{ display: { xs: "none", lg: "block" } }}>
+            <Box className="flex">
+              <Box sx={{ px: 2 }}>
+                {/* <Link href={"/solutions/retail"}>
+              </Link> */}
+                <MatDropdown
+                  triggerMode="hover"
+                  menuSx={{
+                    boxShadow:
+                      "0px 2px 8px 4px rgba(0, 72, 106, 0.12) !important",
+                  }}
+                  trigger={
+                    <Typography className="pointer flex-start" variant="body2">
+                      <span style={{ marginRight: "4px" }}>
+                        {t("solutions")}
+                      </span>
+                      <SvgIcon
+                        width={16}
+                        height={16}
+                        icon="ic_dropdown"
+                      ></SvgIcon>
+                    </Typography>
+                  }
+                >
+                  <SolutionMenu></SolutionMenu>
+                </MatDropdown>
+              </Box>
+              <Box sx={{ px: 2 }}>
+                <Link href={"/price"}>
+                  <Typography variant="body2">{t("price")}</Typography>
+                </Link>
+              </Box>
+              <Box sx={{ px: 2 }}>
+                <Link href={"/"}>
+                  <Typography variant="body2">{t("cooperator")}</Typography>
+                </Link>
+              </Box>
+              <Box sx={{ px: 2 }}>
+                {/* <Link href={"/solutions/retail"}>
+              </Link> */}
+                <MatDropdown
+                  triggerMode="hover"
+                  menuSx={{
+                    boxShadow:
+                      "0px 2px 8px 4px rgba(0, 72, 106, 0.12) !important",
+                  }}
+                  trigger={
+                    <Typography className="pointer flex-start" variant="body2">
+                      <span style={{ marginRight: "4px" }}>{t("support")}</span>
+                      <SvgIcon
+                        width={16}
+                        height={16}
+                        icon="ic_dropdown"
+                      ></SvgIcon>
+                    </Typography>
+                  }
+                >
+                  <SupportMenu></SupportMenu>
+                </MatDropdown>
+              </Box>
+              <Box sx={{ px: 2 }}>
+                <Link href={"/"}>
+                  <Typography variant="body2">{t("contact")}</Typography>
+                </Link>
+              </Box>
               <Link href={"/"}>
-                <Typography variant="body2">{t("cooperator")}</Typography>
+                <Button sx={{ ml: 1.5 }} variant="contained">
+                  {t("signUp")}
+                </Button>
               </Link>
             </Box>
-            <Box sx={{ px: 2 }}>
-              <Link href={"/"}>
-                <Typography variant="body2">{t("support")}</Typography>
-              </Link>
-            </Box>
-            <Box sx={{ px: 2 }}>
-              <Link href={"/"}>
-                <Typography variant="body2">{t("contact")}</Typography>
-              </Link>
-            </Box>
-            <Link href={"/"}>
-              <Button sx={{ ml: 1.5 }} variant="contained">
-                {t("signUp")}
-              </Button>
-            </Link>
           </Box>
         </InnerContent>
       </Box>

@@ -14,11 +14,11 @@
   "education": "教育",
   "retail": "零售",
   "transport": "物流运输",
-  "bussiness": "商业",
+  "business": "商业",
   "catering": "餐饮酒店",
   "productDoc": "产品文档",
   "news": "新闻",
-  "aboutBs": "关于BLUESPHERE",
+  "aboutBs": "关于BlueSphere",
   "requestDemoContent": "想要了解BLueSphere如何应用在您的企业移动设备管理上？免费获取BlueSphere MDM演示，开启设备管理新体验。",
   "requestDemo": "请求演示",
   "startTrail": "开始试用",
@@ -27,7 +27,6 @@
   "cookies": "Cookies",
   "mainTitle": "管理Android移动设备从未如此轻松",
   "subtitle": "BlueSphere结合实时代理功能管理和保护您的安卓设备",
-  "startTrial": "开始试用",
   "setupDemo": "安排演示",
   "noDataFound": "暂无数据",
   "login": "登录",
@@ -36,5 +35,9 @@
   "cooperator": "伙伴",
   "support": "支持",
   "contact": "联系",
-  "signUp": "注册"
+  "signUp": "注册",
+  "contactTitle": "耳听为虚，眼见为实，来亲身体验一番",
+  "noCreditCard": "无需信用卡",
+  "trailForFree": "免费试用",
+  "scheduleADemo": "安排演示"
 }

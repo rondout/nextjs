@@ -10,10 +10,7 @@ import { useTranslation } from "next-i18next";
 import { useMemo } from "react";
 import { BillingTypes, PlanTypes } from "../../model/base.model";
 import InnerContent from "../layouts/InnerContent";
-import MatSelect, {
-  MatSelectOptionFactory,
-  MatSelectProps,
-} from "../tools/MatSelect";
+import MatSelect, { MatSelectOptionFactory } from "../tools/MatSelect";
 import PhoneNumberInput from "../tools/PhoneNumberInput";
 
 const breakPoints = {

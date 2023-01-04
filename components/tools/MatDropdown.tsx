@@ -24,6 +24,8 @@ export interface MatDropdownProps<T> {
   sx?: SxProps;
   disabled?: boolean;
   open?: boolean;
+  triggerMode?: "click" | "hover";
+  menuSx?: SxProps;
 }
 
 /**
@@ -36,7 +38,7 @@ export interface MatDropdownProps<T> {
 export default function MatDropdown<T>(
   props: React.PropsWithChildren<MatDropdownProps<T>>
 ) {
-  const { menus, open = true } = props;
+  const { menus, open = true, triggerMode = "click", menuSx = {} } = props;
   const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);
   const computedOpen = Boolean(anchorEl) && open;
 
@@ -59,7 +61,13 @@ export default function MatDropdown<T>(
   return (
     <Box sx={{ pl: 2, ...props.sx }}>
       {props.trigger ? (
-        <Box onClick={handleClick}>{props.trigger}</Box>
+        <Box
+          onClick={handleClick}
+          onMouseEnter={triggerMode === "hover" ? handleClick : null}
+          // onMouseLeave={triggerMode === "hover" ? handleClose : null}
+        >
+          {props.trigger}
+        </Box>
       ) : (
         // 如果没有trigger这个props就用默认的TextButton
         <Button
@@ -79,34 +87,41 @@ export default function MatDropdown<T>(
       {!props.disabled && (
         <StyledMenu
           sx={{ maxHeight: 450 }}
+          PaperProps={{ sx: menuSx }}
           MenuListProps={{
             "aria-labelledby": "demo-customized-button",
           }}
           anchorEl={anchorEl}
           open={computedOpen}
           onClose={handleClose}
+          // onMouseLeave={triggerMode === "hover" ? handleClose : null}
         >
-          {props.children}
-          {menus?.length > 0 &&
-            menus?.map((menu, index) => (
-              <Box key={index}>
-                <MenuItem
-                  disabled={menu.disabled}
-                  sx={{ p: 1 }}
-                  onClick={() => onMenuClick(menu.action)}
-                  selected={props.selected === menu.action}
-                  disableRipple
-                >
-                  {menu.customStartComponent}
-                  {/* {menu.icon && <Iconfont fontSize={20} icon={menu.icon} mr={1}></Iconfont>} */}
-                  <Typography sx={{ ml: 1 }}>{menu.title}</Typography>
-                </MenuItem>
-                {menu.showDivider && (
-                  <Divider sx={{ m: "0 !important" }}></Divider>
-                )}
-              </Box>
-            ))}
-          {menus?.length <= 0 && <Box>No Data</Box>}
+          <Box
+            onMouseLeave={triggerMode === "hover" ? handleClose : null}
+            onClick={triggerMode === "hover" ? handleClose : null}
+          >
+            {props.children}
+            {menus?.length > 0 &&
+              menus?.map((menu, index) => (
+                <Box key={index}>
+                  <MenuItem
+                    disabled={menu.disabled}
+                    sx={{ p: 1 }}
+                    onClick={() => onMenuClick(menu.action)}
+                    selected={props.selected === menu.action}
+                    disableRipple
+                  >
+                    {menu.customStartComponent}
+                    {/* {menu.icon && <Iconfont fontSize={20} icon={menu.icon} mr={1}></Iconfont>} */}
+                    <Typography sx={{ ml: 1 }}>{menu.title}</Typography>
+                  </MenuItem>
+                  {menu.showDivider && (
+                    <Divider sx={{ m: "0 !important" }}></Divider>
+                  )}
+                </Box>
+              ))}
+            {menus?.length <= 0 && <Box>No Data</Box>}
+          </Box>
         </StyledMenu>
       )}
     </Box>

@@ -11,33 +11,73 @@ import ManageMedicalDeviceSection from "../../components/solutions/healthcare/Ma
 import SolutionMainTop, {
   SolutionMainTopParamFactory,
 } from "../../components/solutions/SolutionMainTop";
+import CommonQuestions, {
+  CommonQuestionItem,
+} from "../../components/common/CommonQuestions";
+import ContactItem from "../../components/common/ContactItem";
 
 export const getStaticProps: GetStaticProps = async function ({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["solutions", "common"])),
+      ...(await serverSideTranslations(locale, ["healthcare", "common"])),
     },
   };
 };
 
-const solutionMainTopParams = new SolutionMainTopParamFactory(
-  "healthAndMedical",
-  "medicalTopTitle",
-  "medicalSubTitle",
-  "/solutions/news-0.png"
-);
-
 export default function HealthCare() {
-  const { t } = useTranslation("solutions");
-  const remoteImgTextItem = useMemo(() => {
-    return new ImageTextSectionPropsFactory(
-      "/solutions/medical_img_visit.png",
-      t("remoteDeviceConfig"),
-      t("remoteMedicalTitle"),
-      t("remoteMedicalSubTitle"),
-      t("useThisOnBs"),
-      ""
-    );
+  const { t } = useTranslation("healthcare");
+  const ct = useTranslation("common").t;
+
+  const solutionMainTopParams = useMemo(
+    () =>
+      new SolutionMainTopParamFactory(
+        t("healthAndMedical"),
+        t("medicalTopTitle"),
+        t("medicalSubTitle"),
+        t("/solutions/news-0.png"),
+        ct("startToUse"),
+        ct("scheduleADemo")
+      ),
+    [t, ct]
+  );
+
+  const imgTextItems = useMemo(() => {
+    return [
+      new ImageTextSectionPropsFactory(
+        "/solutions/medical_img_visit.png",
+        t("remoteDeviceConfig"),
+        t("remoteMedicalTitle"),
+        t("remoteMedicalSubTitle"),
+        t("useThisOnBs"),
+        ""
+      ),
+      new ImageTextSectionPropsFactory(
+        "/solutions/medical_img_remote.png",
+        t("onTimeDeviceManage"),
+        t("onTimeDeviceManageTitle"),
+        t("onTimeDeviceManageSubTitle"),
+        t("useBsForRemoteMedical"),
+        "",
+        false
+      ),
+      new ImageTextSectionPropsFactory(
+        "/solutions/medical_img_memory.png",
+        t("recordAndProtectData"),
+        t("recordAndProtectDataTitle"),
+        t("recordAndProtectDataSubTitle"),
+        t("registFreeAndUse"),
+        ""
+      ),
+    ];
+  }, [t]);
+
+  const questionItems = useMemo(() => {
+    return [
+      new CommonQuestionItem(t("questions.title-1"), t("questions.subtitle-1")),
+      new CommonQuestionItem(t("questions.title-2"), t("questions.subtitle-2")),
+      new CommonQuestionItem(t("questions.title-3"), t("questions.subtitle-3")),
+      new CommonQuestionItem(t("questions.title-4"), t("questions.subtitle-4")),
+    ];
   }, [t]);
 
   return (
@@ -45,12 +85,14 @@ export default function HealthCare() {
       <SolutionMainTop {...solutionMainTopParams}></SolutionMainTop>
       <ManageMedicalDeviceSection></ManageMedicalDeviceSection>
       <CommentItem></CommentItem>
-      <ImageTextSection {...remoteImgTextItem}></ImageTextSection>
-      <ImageTextSection
-        {...remoteImgTextItem}
-        imgUrl="/solutions/medical_img_remote.png"
-        imgLeft={false}
-      ></ImageTextSection>
+      {imgTextItems.map((item) => (
+        <ImageTextSection key={item.tag} {...item}></ImageTextSection>
+      ))}
+      <CommonQuestions
+        items={questionItems}
+        title={t("bsAppCommonQuestion")}
+      ></CommonQuestions>
+      <ContactItem title={t("contactTitle")}></ContactItem>
     </Layout>
   );
 }

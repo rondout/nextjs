@@ -42,9 +42,9 @@ const professionItems = [
     "/solutions/transport"
   ),
   new ProfessionItem(
-    "bussiness",
+    "business",
     "/home/ic_business.svg",
-    "/solutions/bussiness"
+    "/solutions/business"
   ),
   new ProfessionItem("catering", "/home/ic_hotel.svg", "/solutions/catering"),
 ];

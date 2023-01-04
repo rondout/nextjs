@@ -78,27 +78,34 @@ export default function DeviceManageIntro() {
             item
             {...breakPoints}
           >
-            <Box sx={{ borderRadius: 6, bgcolor: primary.dark, width: 600 }}>
+            {/* <Box sx={{ borderRadius: 6, bgcolor: primary.dark, width: 600 }}> */}
+            <Box className="flex" sx={{ width: 1 }}>
               <Image
-                style={{ marginBottom: -13 }}
-                src="/home/device_manage.png"
+                style={{
+                  marginBottom: -13,
+                  maxWidth: 600,
+                  width: "100%",
+                  height: "auto",
+                }}
+                src="/home/home_img_register.svg"
                 alt=""
                 width={600}
-                height={440}
+                height={400}
               ></Image>
             </Box>
+            {/* </Box> */}
           </Grid>
           <Grid
             sx={{ dispaly: "flex", justifyContent: "center" }}
             item
             {...breakPoints}
           >
-            <Box>
+            <Box className="flex flex-column">
               {rightAccordionItems.map((item) => {
                 return (
                   <Box
                     key={item.title}
-                    sx={{ bgcolor: background.default, width: 576, mb: 2 }}
+                    sx={{ bgcolor: background.default, mb: 2 }}
                   >
                     <StyledAccordion
                       expanded={expanded === item.title}

@@ -1,6 +1,5 @@
 import { Box, Button, Grid, Typography, useTheme } from "@mui/material";
 import InnerContent from "../layouts/InnerContent";
-import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import { calculateBreakpointsByRatio } from "../../model/tool.model";
 
@@ -28,13 +27,14 @@ export class SolutionMainTopParamFactory {
     public tag: string,
     public title: string,
     public subtitle: string,
-    public imgUrl: string
+    public imgUrl: string,
+    public startBtnTitle: string,
+    public reqyestDemoBtnTitle: string
   ) {}
 }
 
 export default function SolutionMainTop(props: SolutionMainTopParamFactory) {
   const { custom } = useTheme();
-  const { t } = useTranslation("solutions");
 
   return (
     <Box sx={{ backgroundImage: custom.bgLinerGradient, py: 16.5 }}>
@@ -42,22 +42,22 @@ export default function SolutionMainTop(props: SolutionMainTopParamFactory) {
         <Grid container spacing={{ xs: 2, md: 3, lg: 5 }}>
           <Grid item {...breakPoints.left}>
             <Box>
-              <Typography color="primary">{t(props.tag)}</Typography>
+              <Typography color="primary">{props.tag}</Typography>
               <Typography fontWeight={700} variant="h2" sx={{ mt: 1, mb: 5 }}>
-                {t(props.title)}
+                {props.title}
               </Typography>
               <Typography variant="h5" sx={{ mb: 5 }}>
-                {t(props.subtitle)}
+                {props.subtitle}
               </Typography>
               <Box className="flex-start flex-wrap">
                 <Button
                   sx={{ mr: 3, minWidth: 160 }}
                   style={{ backgroundColor: "#fff" }}
                 >
-                  {t("startToUse")}
+                  {props.startBtnTitle}
                 </Button>
                 <Button variant="contained" sx={{ minWidth: 160 }}>
-                  {t("scheduleADemo")}
+                  {props.reqyestDemoBtnTitle}
                 </Button>
               </Box>
             </Box>

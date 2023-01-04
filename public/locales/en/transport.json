@@ -1,0 +1,21 @@
+{
+  "contactTitle": "BlueSphere MDM helps logistics and transportation business",
+  "transport": "Logistics and Transportation",
+  "transportTitle": "Help your logistics transportation, speed up delivery time",
+  "transportSubTitle": "Use BlueSphere MDM to optimize supply chain cycle and improve customer experience",
+  "deviceManage": "Employee Device Management",
+  "deviceManageTitle": "Restrict drivers' device access to apps, files and websites to create a more efficient and safer working environment",
+  "deviceManageSubTitle": "BlueSphere MDM allows you to limit employee device access to apps, files, web permissions and restrict installation of other apps on Android devices; by disabling unnecessary form autofills, javascript, popups, cookies and history, for Drivers create a safer browser environment, ensuring that drivers are not distracted by irrelevant information. This ensures a safer and more productive work environment, helps drivers focus on their work, and improves road safety.",
+  "useBsToManageDevice": "Use BlueSphere MDM to manage employee devices",
+  "geolocation": "Location Tracking",
+  "geolocationTitle": "Real-time location tracking, pay close attention to asset location, protect equipment safety, and reduce unnecessary losses",
+  "geolocationSubTitle": "Track equipment in real time and set up virtual geo-fences to ensure smooth and efficient delivery of shipments, faster delivery of goods, and improved customer satisfaction. Employee equipment is protected by enforcing passwords and encryption. In case of equipment loss, Remote locking and erasing of device data can be used to protect device data security, and it can also track the lost location of the device based on GPS high-precision positioning to help you find the device and reduce asset losses.",
+  "goProtectDevice": "Protect device security immediately",
+  "functionSectionTitle": "One platform easily solves logistics and transportation problems",
+  "recorder": "Electronic Recorder",
+  "truck_manage": "Fleet Management",
+  "ontime_deliver": "Ontime delivery",
+  "remote_fix": "Remote Troubleshooting",
+  "pref_route": "Optimize Shipping Route",
+  "route_security": "Route Security"
+}

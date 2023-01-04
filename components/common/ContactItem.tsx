@@ -10,9 +10,10 @@ import { useTranslation } from "next-i18next";
 import Link from "next/link";
 import InnerContent from "../layouts/InnerContent";
 
-export default function ContactItem() {
-  const mt = useTranslation("main").t;
+export default function ContactItem(props: { title?: string }) {
+  const mt = useTranslation("common").t;
   const { spacing, palette } = useTheme();
+  const title = props.title || mt("contactTitle");
   return (
     <Box
       sx={{
@@ -29,7 +30,7 @@ export default function ContactItem() {
           sx={{ mb: 8 }}
           textAlign="center"
         >
-          {mt("contactTitle")}
+          {title}
         </Typography>
         <Box
           className="flex"

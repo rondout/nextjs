@@ -1,0 +1,27 @@
+{
+  "contactTitle": "BlueSphere MDM defines a new consumption experience for restaurants and hotels",
+  "catering": "catering hotel",
+  "cateringTitle": "A new service method, providing customers with a new experience",
+  "cateringSubTitle": "Digital kiosks, self-service, simplifying how restaurants and hotels operate",
+  "selfServiceTerminalManage": "Self-Service Terminal Management",
+  "selfServiceTerminalManageTitle": "The self-service terminal provides convenience for customers and saves human resource costs",
+  "selfServiceTerminalManageSubTitle": "Traditional restaurants and hotels adopt a manual service mode, which is inefficient and cumbersome to communicate. The BlueSphere MDM Kiosk mode can lock any mobile device as a self-service terminal, and customers can perform self-service at any place where there is a self-service terminal, effectively reducing Reduce labor costs and improve customers' consumption experience. The remote troubleshooting and recovery function can quickly solve equipment errors, and you don't need to worry about equipment personnel on duty, just hand over the equipment to Bluesphere MDM.",
+  "useThisOnBs": "Use BlueSphere to manage kiosks",
+  "deviceAccessManage": "Device Access Management",
+  "deviceAccessManageTitle": "Customize permission settings for employee and guest devices to simplify the operation process",
+  "deviceAccessManageSubTitle": "BlueSphere MDM creates a more efficient working environment for employees by restricting employees' access to applications, web pages, files, etc. Transformed into an exclusive self-service terminal, allowing customers to enjoy exclusive and convenient services and improving customer consumption experience, which ensures a safer, more efficient and simplified service environment.",
+  "useBsToManageMobileDevice": "Use BlueSphere to manage mobile devices",
+  "kiosk": "Digital Kiosk",
+  "kioskTitle": "Display your exclusive restaurant and hotel logo on the device to unify the brand experience",
+  "kioskSubTitle": "Brand is an intangible asset of an enterprise. The value, personality, quality and other characteristics it contains can bring important value to the product. Brands can help enterprises create a good image and help consumers recognize trust Brand. Use BlueSphere MDM to customize and display your restaurant and hotel logos on all mobile device terminals, provide customers with a unified brand experience, and increase brand awareness and recognition.",
+  "customOwnMark": "Start customizing your own mark now",
+  "iconTextTitle": "Today, touch display terminals can be seen everywhere in the catering and hotel industry",
+  "iconTexts": {
+    "1": "Digital Booth",
+    "2": "Self-service check-in",
+    "3": "Interactive Kiosk",
+    "4": "Self-service electronic ordering",
+    "5": "POS all-in-one machine",
+    "6": "Visible back kitchen operation"
+  }
+}

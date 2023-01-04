@@ -36,11 +36,11 @@ export default function MainTop() {
         </Box>
         <Box className="flex" sx={{ overflow: "hidden" }}>
           <Image
-            style={{ marginBottom: "-1px" }}
-            src="/home/index-content-1.png"
-            width={944}
+            style={{ marginBottom: "-1px", width: "100%", height: "auto" }}
+            src="/home/home_img_device.svg"
+            width={1200}
             alt=""
-            height={440}
+            height={456}
           ></Image>
         </Box>
       </InnerContent>

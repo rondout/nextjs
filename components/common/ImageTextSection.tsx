@@ -13,6 +13,8 @@ interface ImageTextSectionProps {
   linlText: string;
   linkUrl: string;
   imgLeft?: boolean;
+  imgWidth?: number;
+  imgHeight?: number;
 }
 
 export class ImageTextSectionPropsFactory implements ImageTextSectionProps {
@@ -23,7 +25,9 @@ export class ImageTextSectionPropsFactory implements ImageTextSectionProps {
     public subTitle: string,
     public linlText: string,
     public linkUrl: string,
-    public imgLeft: boolean = true
+    public imgLeft: boolean = true,
+    public imgWidth = 540,
+    public imgHeight = 400
   ) {}
 }
 
@@ -41,7 +45,7 @@ const breakPoints = {
 };
 
 export default function ImageTextSection(props: ImageTextSectionProps) {
-  const { imgLeft = true, imgUrl } = props;
+  const { imgLeft = true, imgUrl, imgWidth, imgHeight } = props;
   const theme = useTheme();
 
   const backgroundImage = imgLeft ? undefined : theme.custom.customLinearBg;
@@ -53,7 +57,12 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
           {imgLeft && (
             <Grid item {...breakPoints.img}>
               <Box sx={{ overflow: "hidden" }} className="flex">
-                <Image alt="" src={imgUrl} width={520} height={400}></Image>
+                <Image
+                  alt=""
+                  src={imgUrl}
+                  width={imgWidth}
+                  height={imgHeight}
+                ></Image>
               </Box>
             </Grid>
           )}
@@ -74,7 +83,12 @@ export default function ImageTextSection(props: ImageTextSectionProps) {
           {!imgLeft && (
             <Grid item {...breakPoints.img}>
               <Box sx={{ overflow: "hidden" }} className="flex">
-                <Image alt="" src={imgUrl} width={520} height={400}></Image>
+                <Image
+                  alt=""
+                  src={imgUrl}
+                  width={imgWidth}
+                  height={imgHeight}
+                ></Image>
               </Box>
             </Grid>
           )}

@@ -99,13 +99,25 @@ export default function PriceCompareTop() {
           </Typography>
           {/* 计费选择 */}
           <Box className="flex" sx={{ mb: 9 }}>
-            <Typography variant="body1">{pt("billingByMonth")}</Typography>
+            <Typography
+              variant="body1"
+              className="pointer"
+              onClick={() => setBillingType(BillingTypes.MONTHLY)}
+            >
+              {pt("billingByMonth")}
+            </Typography>
             <Switch
               onChange={onSwitchChange}
               checked={selectedBillingType === BillingTypes.ANNUAL}
               sx={{ mx: 1 }}
             ></Switch>
-            <Typography variant="body1">{pt("billingByYear")}</Typography>
+            <Typography
+              variant="body1"
+              className="pointer"
+              onClick={() => setBillingType(BillingTypes.ANNUAL)}
+            >
+              {pt("billingByYear")}
+            </Typography>
           </Box>
           <StyledCard
             sx={{
