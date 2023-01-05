@@ -44,7 +44,7 @@ export default function Layout({ children, home }) {
   };
 
   useEffect(() => {
-    const theme = localStorage.getItem("theme");
+    const theme = localStorage.getItem("theme") || "light";
     console.log(theme);
     changeTheme(theme);
     setMounted(true);
