@@ -10,6 +10,7 @@ import CommentItem from "../components/common/CommentItem";
 import ContactItem from "../components/common/ContactItem";
 import LatestNewsItem from "../components/home/LatestNewsItem";
 import { NewsItem, NewsType } from "../model/home.model";
+import CompanyList from "../components/home/CompanyList";
 
 export const getStaticProps: GetStaticProps = async function ({ locale }) {
   const newsItem: NewsItem[] = [
@@ -45,6 +46,7 @@ export const getStaticProps: GetStaticProps = async function ({ locale }) {
     props: {
       ...(await serverSideTranslations(locale, ["common", "main"])),
       newsItem,
+      isSwiper: true,
     },
   };
 };
@@ -53,6 +55,7 @@ export default function Home(props: { newsItem: NewsItem[] }) {
   return (
     <Layout>
       <MainTop></MainTop>
+      <CompanyList></CompanyList>
       <ChooseProfession></ChooseProfession>
       <DeviceManageIntro></DeviceManageIntro>
       <CommentItem></CommentItem>

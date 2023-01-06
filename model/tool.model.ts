@@ -112,3 +112,7 @@ export function calculateBreakpointsByRatio(
 export class LinkItem {
   constructor(public title: string, public href: string) {}
 }
+
+export function isProd() {
+  return process.env.NODE_ENV !== "development";
+}

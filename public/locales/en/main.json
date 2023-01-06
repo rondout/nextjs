@@ -3,10 +3,13 @@
   "noProfessionFound": "Didn't find your profession? Contact BlueSphere",
   "contactBs": "Contact BlueSphere",
   "deviceManageTitle": "BlueSphere helps you manage Android devices in your business",
-  "quicManage": "quickly manage devices",
-  "quicManageDesc": "Zero-contact registration can perform contactless device registration in batches, quickly deploy thousands of devices, and remotely configure the functions of Android devices in batches through configuration templates, which will take effect in real time. Simple but not simple!",
+  "quickManage": "Quickly bring devices into management",
+  "quickManageDesc": "Zero-touch registration can perform contactless device registration in batches, quickly deploy thousands of devices, and remotely configure the functions of Android devices in batches through configuration templates, which will take effect in real time. Simple but not simple!",
   "contentPermissionTitle": "Device access to application content permissions",
   "remoteManageTitle": "Remote device management, monitoring and diagnosis",
   "fileDeployTitle": "Real-time deployment of applications and files",
-  "latestNews": "Latest News"
+  "latestNews": "Latest News",
+  "contentPermissionDesc": "Using Kiosk mode, Android devices can only serve your organization and business, and hide all functions and applications that affect your business. Managing your device fleet is so easy!",
+  "remoteManageDesc": "Ensure organizations and businesses can manage your Android mobile devices in any environment with deployment, monitoring and management, unified management, individual locking, remote upgrades and maintenance. Keep everything under control!",
+  "fileDeployDesc": "Safely deploy team applications on devices, install, update, and uninstall applications in batches, and disable unnecessary programs through blacklist/whitelist; push files in real time to make device management more efficient!"
 }

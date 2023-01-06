@@ -12,8 +12,7 @@ import {
 } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
-import Link from "next/link";
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import InnerContent from "../layouts/InnerContent";
 
 const breakPoints = {
@@ -22,10 +21,26 @@ const breakPoints = {
 };
 
 const rightAccordionItems = [
-  { title: "quicManage", desc: "quicManageDesc" },
-  { title: "contentPermissionTitle", desc: "quicManageDesc" },
-  { title: "remoteManageTitle", desc: "quicManageDesc" },
-  { title: "fileDeployTitle", desc: "quicManageDesc" },
+  {
+    title: "quickManage",
+    desc: "quickManageDesc",
+    img: "/home/home_manage-1.svg",
+  },
+  {
+    title: "contentPermissionTitle",
+    desc: "contentPermissionDesc",
+    img: "/home/home_manage-2.svg",
+  },
+  {
+    title: "remoteManageTitle",
+    desc: "remoteManageDesc",
+    img: "/home/home_manage-3.svg",
+  },
+  {
+    title: "fileDeployTitle",
+    desc: "fileDeployDesc",
+    img: "/home/home_manage-4.svg",
+  },
 ];
 
 export const StyledAccordion = styled((props: AccordionProps) => {
@@ -46,17 +61,16 @@ export const StyledAccordion = styled((props: AccordionProps) => {
 export default function DeviceManageIntro() {
   const mt = useTranslation("main").t;
   const theme = useTheme();
-  const { primary, background } = theme.palette;
-  const [expanded, setExpanded] = useState("quicManage");
+  const { background } = theme.palette;
+  const [expanded, setExpanded] = useState("quickManage");
 
   const handleChange = (key: string) => {
-    // if (key === expanded) {
-    //   setExpanded(null);
-    // } else {
-    //   setExpanded(key);
-    // }
     setExpanded(key);
   };
+
+  const imgUrl = useMemo(() => {
+    return rightAccordionItems.find((item) => item.title === expanded)?.img;
+  }, [expanded]);
 
   return (
     <Box
@@ -87,7 +101,7 @@ export default function DeviceManageIntro() {
                   width: "100%",
                   height: "auto",
                 }}
-                src="/home/home_img_register.svg"
+                src={imgUrl}
                 alt=""
                 width={600}
                 height={400}

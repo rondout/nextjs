@@ -37,7 +37,7 @@ export default function Catering() {
         t("cateringTitle"),
         t("cateringSubTitle"),
         "/solutions/news-0.png",
-        mt("startToUse"),
+        mt("startTrail"),
         mt("scheduleADemo")
       ),
     [t, mt]
@@ -92,12 +92,12 @@ export default function Catering() {
 
   const iconTextItems = useMemo(
     () => [
-      new IconTextItem("/solutions/ic_screen", t("iconTexts.1")),
-      new IconTextItem("/solutions/ic_display", t("iconTexts.2")),
-      new IconTextItem("/solutions/ic_search", t("iconTexts.3")),
-      new IconTextItem("/solutions/ic_service", t("iconTexts.4")),
-      new IconTextItem("/solutions/ic_register", t("iconTexts.5")),
-      new IconTextItem("/solutions/ic_register", t("iconTexts.6")),
+      new IconTextItem("/solutions/catering_ic_display", t("iconTexts.1")),
+      new IconTextItem("/solutions/catering_ic_screen", t("iconTexts.2")),
+      new IconTextItem("/solutions/catering_ic_search", t("iconTexts.3")),
+      new IconTextItem("/solutions/catering_ic_service", t("iconTexts.4")),
+      new IconTextItem("/solutions/catering_ic_screen-1", t("iconTexts.5")),
+      new IconTextItem("/solutions/catering_ic_display-1", t("iconTexts.6")),
     ],
     [t]
   );

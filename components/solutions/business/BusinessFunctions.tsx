@@ -18,9 +18,9 @@ class CardItem {
 }
 
 const cardItems = [
-  new CardItem("ic_register", "saveTime", "saveTimeSubtitle"),
-  new CardItem("ic_kiosk_lock", "easyToLearn", "easyToLearnSubtitle"),
-  new CardItem("ic_remote_view", "expandable", "expandableSubtitle"),
+  new CardItem("/solutions/ic_time", "saveTime", "saveTimeSubtitle"),
+  new CardItem("/solutions/ic_easy_use", "easyToLearn", "easyToLearnSubtitle"),
+  new CardItem("/solutions/ic_expand", "expandable", "expandableSubtitle"),
 ];
 
 export default function BusinessFunctions() {

@@ -44,7 +44,7 @@ export default function Business() {
   const imgTextItems = useMemo(() => {
     return [
       new ImageTextSectionPropsFactory(
-        "/solutions/solution_device_manage.png",
+        "/solutions/business_zero_touch_regist.png",
         t("zeroTouchRegister"),
         t("zeroTouchRegisterTitle"),
         t("zeroTouchRegisterSubTitle"),
@@ -55,7 +55,7 @@ export default function Business() {
         360
       ),
       new ImageTextSectionPropsFactory(
-        "/solutions/solution_device_manage_2.png",
+        "/solutions/business_access_manage.png",
         t("deviceAccessManage"),
         t("deviceAccessManageTitle"),
         t("deviceAccessManageSubTitle"),
@@ -66,7 +66,7 @@ export default function Business() {
         360
       ),
       new ImageTextSectionPropsFactory(
-        "/solutions/solution_device_manage_2.png",
+        "/solutions/business_data_protect.png",
         t("dataProtect"),
         t("dataProtectTitle"),
         t("dataProtectSubTitle"),

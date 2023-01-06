@@ -41,7 +41,7 @@ export default function PriceSecondSection() {
   const pt = useTranslation("price").t;
   const theme = useTheme();
   const { primary, background } = theme.palette;
-  const [expanded, setExpanded] = useState("quicManage");
+  const [expanded, setExpanded] = useState("quickManage");
 
   const handleChange = (key: string) => {
     // if (key === expanded) {

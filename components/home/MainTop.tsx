@@ -2,6 +2,7 @@ import { alpha, Box, Button, Typography, useTheme } from "@mui/material";
 import { useTranslation } from "next-i18next";
 import Image from "next/image";
 import InnerContent from "../layouts/InnerContent";
+import { homeContent } from "../../model/base64Imgs";
 
 export default function MainTop() {
   const { t } = useTranslation("common");
@@ -28,7 +29,7 @@ export default function MainTop() {
         </Typography>
         <Box sx={{ mt: 5, mb: 6 }} className="flex">
           <Button sx={{ bgcolor: theme.palette.background.default }}>
-            {mt("startTrail")}
+            {t("startTrail")}
           </Button>
           <Button variant="contained" sx={{ ml: 5 }}>
             {t("setupDemo")}
@@ -37,11 +38,12 @@ export default function MainTop() {
         <Box className="flex" sx={{ overflow: "hidden" }}>
           <Image
             style={{ marginBottom: "-1px", width: "100%", height: "auto" }}
-            src="/home/home_img_device.svg"
+            src={homeContent}
             width={1200}
             alt=""
             height={456}
           ></Image>
+          {/* <img src={`data:image/svg;base64,${imgurl}`} alt=""></img> */}
         </Box>
       </InnerContent>
     </Box>

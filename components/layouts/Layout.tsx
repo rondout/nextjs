@@ -68,11 +68,11 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
           </Link>
           <Box sx={{ display: { xs: "none", lg: "block" } }}>
             <Box className="flex">
-              <Box sx={{ px: 2 }}>
+              <Box sx={{ pr: 2 }}>
                 {/* <Link href={"/solutions/retail"}>
               </Link> */}
                 <MatDropdown
-                  triggerMode="hover"
+                  triggerMode="click"
                   menuSx={{
                     boxShadow:
                       "0px 2px 8px 4px rgba(0, 72, 106, 0.12) !important",
@@ -103,11 +103,11 @@ export default function Layout(props: PropsWithChildren<LayoutProps>) {
                   <Typography variant="body2">{t("cooperator")}</Typography>
                 </Link>
               </Box>
-              <Box sx={{ px: 2 }}>
+              <Box sx={{ pr: 2 }}>
                 {/* <Link href={"/solutions/retail"}>
               </Link> */}
                 <MatDropdown
-                  triggerMode="hover"
+                  triggerMode="click"
                   menuSx={{
                     boxShadow:
                       "0px 2px 8px 4px rgba(0, 72, 106, 0.12) !important",
