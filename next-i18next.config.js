@@ -4,5 +4,9 @@ module.exports = {
   i18n: {
     locales: ["en", "zh"],
     defaultLocale: "en",
+    domains: [
+      { domain: "vercel.app", defaultLocale: "zh" },
+      { domain: "ctort.com:3001", defaultLocale: "en", http: true },
+    ],
   },
 };
