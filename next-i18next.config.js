@@ -6,7 +6,7 @@ module.exports = {
     defaultLocale: "en",
     domains: [
       { domain: "nextjs-rondout.vercel.app", defaultLocale: "zh" },
-      { domain: "ctort.com:3001", defaultLocale: "en", http: true },
+      { domain: "ctort.com", defaultLocale: "en", http: true },
     ],
   },
 };
