@@ -3,11 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "next build && next start -p 8080"
+    "test": "next build && next start -p 8080",
+    "prod": "next build && next start -p 80",
+    "export": "next build && next export"
   },
   "dependencies": {
     "@emotion/react": "^11.7.1",

@@ -34,7 +34,7 @@ export default function HealthCare() {
         t("healthAndMedical"),
         t("medicalTopTitle"),
         t("medicalSubTitle"),
-        t("/solutions/news-0.png"),
+        t("/solutions/medical_img_main.png"),
         ct("startTrail"),
         ct("scheduleADemo")
       ),

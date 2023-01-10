@@ -15,8 +15,11 @@ interface AppPropsTypes {
 }
 
 function App({ Component, pageProps }: AppProps<AppPropsTypes>) {
+  // 这里的Component指的是渲染的page， pageProps是这个page的props  他可以使来自getStaticProps、getServerSideProps等
   const [mode, setMode] = useState<Palette["mode"]>("light");
   // const [mode, setMode] = useState<Palette["mode"]>("dark");
+
+  // 全局CSS可以按需导入
   // if (pageProps.isSwiper) {
   //   // @ts-ignore
   //   import("swiper/css");
@@ -34,7 +37,7 @@ function App({ Component, pageProps }: AppProps<AppPropsTypes>) {
   }, [mode]);
 
   useEffect(() => {
-    console.log(process.env.NODE_ENV);
+    // 在useEffect里面可以安全的访问localStorage、window等浏览器API和对象
     localStotage = window.localStorage;
   }, []);
 

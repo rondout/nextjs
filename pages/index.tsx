@@ -54,6 +54,7 @@ export const getStaticProps: GetStaticProps = async function ({ locale }) {
 export default function Home(props: { newsItem: NewsItem[] }) {
   return (
     <Layout>
+      {/* 首页 */}
       <MainTop></MainTop>
       <CompanyList></CompanyList>
       <ChooseProfession></ChooseProfession>

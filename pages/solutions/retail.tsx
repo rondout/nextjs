@@ -35,7 +35,7 @@ export default function Retail() {
         t("retail"),
         t("retailTitle"),
         t("retailSubTitle"),
-        "/solutions/news-0.png",
+        "/solutions/retail_img_main.png",
         t("startToUse"),
         t("scheduleADemo")
       ),

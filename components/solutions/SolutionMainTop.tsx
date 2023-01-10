@@ -8,7 +8,7 @@ import { calculateBreakpointsByRatio } from "../../model/tool.model";
 
 const [standardLeftRatio, standardRightRatio] = calculateBreakpointsByRatio(
   640,
-  520
+  560
 );
 
 const breakPoints = {
@@ -37,11 +37,11 @@ export default function SolutionMainTop(props: SolutionMainTopParamFactory) {
   const { custom } = useTheme();
 
   return (
-    <Box sx={{ backgroundImage: custom.bgLinerGradient, py: 16.5 }}>
+    <Box sx={{ backgroundImage: custom.bgLinerGradient, py: 11 }}>
       <InnerContent>
         <Grid container spacing={{ xs: 2, md: 3, lg: 5 }}>
           <Grid item {...breakPoints.left}>
-            <Box>
+            <Box className="flex flex-column items-start" sx={{ height: 1 }}>
               <Typography color="primary">{props.tag}</Typography>
               <Typography fontWeight={700} variant="h2" sx={{ mt: 1, mb: 5 }}>
                 {props.title}
@@ -49,9 +49,9 @@ export default function SolutionMainTop(props: SolutionMainTopParamFactory) {
               <Typography variant="h5" sx={{ mb: 5 }}>
                 {props.subtitle}
               </Typography>
-              <Box className="flex-start flex-wrap">
+              <Box className="flex-start flex-nowrap">
                 <Button
-                  sx={{ mr: 3, minWidth: 160 }}
+                  sx={{ mr: { xs: 1, sm: 2, md: 3 }, minWidth: 160 }}
                   style={{ backgroundColor: "#fff" }}
                 >
                   {props.startBtnTitle}
@@ -63,8 +63,15 @@ export default function SolutionMainTop(props: SolutionMainTopParamFactory) {
             </Box>
           </Grid>
           <Grid item {...breakPoints.right}>
-            <Box sx={{ height: 360, overflow: "hidden" }} className="flex">
-              <Image src={props.imgUrl} width={520} height={360} alt=""></Image>
+            <Box sx={{ overflow: "hidden" }} className="flex">
+              <Image
+                priority
+                style={{ width: "100%", height: "auto", maxWidth: 560 }}
+                src={props.imgUrl}
+                width={560}
+                height={448}
+                alt=""
+              ></Image>
             </Box>
           </Grid>
         </Grid>
