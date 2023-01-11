@@ -4,9 +4,9 @@ module.exports = {
   i18n: {
     locales: ["en", "zh"],
     defaultLocale: "en",
-//     domains: [
-//       { domain: "nextjs-rondout.vercel.app", defaultLocale: "zh" },
-//       { domain: "ctort.com", defaultLocale: "en", http: true },
-//     ],
+    domains: [
+      { domain: "nextjs-rondout.vercel.app", defaultLocale: "zh" },
+      { domain: "ctort.com", defaultLocale: "en", http: true },
+    ],
   },
 };
