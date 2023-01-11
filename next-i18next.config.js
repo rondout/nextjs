@@ -3,10 +3,11 @@ module.exports = {
   // https://nextjs.org/docs/advanced-features/i18n-routing
   i18n: {
     locales: ["en", "zh"],
-    defaultLocale: "en",
+    defaultLocale: "zh",
+    localeDetection: false,
     domains: [
-      { domain: "nextjs-rondout.vercel.app", defaultLocale: "en" },
-      { domain: "ctort.com:3001", defaultLocale: "zh", http: true },
+      { domain: "nextjs-rondout.vercel.app", defaultLocale: "zh" },
+      { domain: "ctort.com:3001", defaultLocale: "en", http: true },
     ],
   },
 };
